@@ -1,0 +1,62 @@
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-secundary {
+    color: var(--secundary) !important;
+}
+
+@media (min-width: 1000px) {
+    .ocultar-pc {
+        display: none !important;
+    }
+}
+@media (max-width: 991px) {
+    .ocultar-md {
+        display: none !important;
+    }
+    .pr-md-0 {
+        padding-right: 0px;
+    }
+    .mr-md-0 {
+        margin-right: 0px;
+    }
+    .pl-md-0 {
+        padding-left: 0px;
+    }
+    .ml-md-0 {
+        margin-left: 0px;
+    }
+}

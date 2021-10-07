@@ -1,0 +1,130 @@
+/* Menu */
+.navbar-desctop-menu li a:hover,
+.navbar-desctop-menu .active > a {
+    color: var(--blanco);
+}
+
+.navbar-desctop-menu > li > a {
+    color: var(--blanco);
+    background-color: transparent;
+    margin-bottom: 1.5em;
+    font-weight: 500;
+    text-transform: initial;
+}
+
+/* Inicio */
+.current-number,
+.count {
+    color: var(--secundary) !important;
+}
+.social-list > li > a {
+    color: var(--text-color-gris);
+}
+
+/* Slider */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+li > .overlay {
+    background-color: var(--negro);
+    opacity: 0.4;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    z-index: 2;
+}
+
+.tp-parallax-wrap {
+    z-index: 3 !important;
+}
+
+/* Form */
+.form-control-simple,
+textarea.form-control-simple {
+    font-size: 1em;
+    width: 100%;
+    height: 1.8em;
+    border-radius: 0em;
+    padding-left: 22px;
+    color: #666666;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -webkit-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    transition: all 0.15s;
+}
+.input-field i,
+.input-field svg,
+.input-field img {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 0.9rem;
+}
+.input-field input,
+.input-field select {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 200;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+.input-field {
+    width: 100%;
+    background-color: var(--input);
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    padding: 0 0.4rem;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.input-field input::placeholder {
+    color: var(--primary);
+    font-weight: 200;
+    text-align: center;
+}
+.line-form {
+    height: 100%;
+    color: transparent;
+    border-right: 1px solid var(--text-color);
+}
+@media (max-width: 991px) {
+    .line-form {
+        height: auto;
+        width: 100%;
+        color: transparent;
+        border-right: 0px;
+        border-bottom: 1px solid var(--text-color);
+    }
+}
+
+.espacio-form {
+    padding: 0rem 4rem;
+}
+@media (max-width: 991px) {
+    .espacio-form {
+        padding: 0rem 0rem;
+    }
+}
+.altura-linea-form {
+    height: auto;
+}
+@media (max-width: 991px) {
+    .altura-linea-form {
+        height: 2vh;
+    }
+}
