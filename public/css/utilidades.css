@@ -38,6 +38,16 @@
     color: var(--secundary) !important;
 }
 
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 40vw;
+}
+.plr-10p {
+    padding: 0rem 10%;
+}
 @media (min-width: 1000px) {
     .ocultar-pc {
         display: none !important;
@@ -58,5 +68,11 @@
     }
     .ml-md-0 {
         margin-left: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .plr-10p {
+        padding: 0rem 0rem;
     }
 }

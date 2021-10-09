@@ -58,7 +58,13 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+    font-family: "primaryBold", sans-serif !important;
+    color: var(--text-color);
+    margin: 0px;
+    font-weight: 600;
+}
+
 p,
 button,
 span,
@@ -67,6 +73,9 @@ input {
     font-family: "primaryLight", sans-serif !important;
     color: var(--text-color);
     margin: 0px;
+}
+p {
+    font-size: 1.6rem;
 }
 
 h1,
@@ -157,8 +166,17 @@ a:focus {
     outline: none;
     text-decoration: none;
 }
+a:hover {
+    text-decoration: none;
+}
 
 button,
 input[type="submit"] {
     cursor: pointer;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }

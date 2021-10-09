@@ -264,32 +264,19 @@
     <script src="{{ asset('js/rev-slider/revolution.extension.slideanims.min.js') }}"></script>
     <script src="{{ asset('js/rev-slider/revolution.extension.video.min.js') }}"></script>
     <script src="{{ asset('js/interface.js') }}"></script>
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="{{ asset('js/datepicker.js') }}"></script>
+    <script src="{{ asset('js/form.js') }}"></script>
 
-
-    <script type="text/javascript">
-        $(function() {
-
-            $('input[name="ida_vuelta"]').daterangepicker({
-                autoUpdateInput: false,
-                locale: {
-                    cancelLabel: 'Clear'
-                }
-            });
-
-            $('input[name="ida_vuelta"]').on('apply.daterangepicker', function(ev, picker) {
-                $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format(
-                    'MM/DD/YYYY'));
-            });
-
-            $('input[name="ida_vuelta"]').on('cancel.daterangepicker', function(ev, picker) {
-                $(this).val('');
-            });
-
+    <script>
+        $('.dropdown-menu').on('click', function(e) {
+            e.stopPropagation();
         });
     </script>
+
 
 </body>
 

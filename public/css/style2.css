@@ -60,6 +60,42 @@ textarea.form-control-simple {
     -o-transition: all 0.15s;
     transition: all 0.15s;
 }
+.input-field-sm {
+    width: 100%;
+    background-color: transparent;
+    margin: 10px 0;
+    height: 42px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    padding: 0 0.4rem;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-field-sm select {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 200;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    appearance: none;
+    width: 100%;
+    height: 100%;
+}
+
+.input-field-sm svg {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 0.9rem;
+    margin-left: -6px;
+}
+
 .input-field i,
 .input-field svg,
 .input-field img {
@@ -78,6 +114,9 @@ textarea.form-control-simple {
     font-weight: 200;
     font-size: 0.9rem;
     color: var(--text-color);
+    appearance: none;
+    width: 100%;
+    height: 100%;
 }
 .input-field {
     width: 100%;
@@ -127,4 +166,105 @@ textarea.form-control-simple {
     .altura-linea-form {
         height: 2vh;
     }
+}
+.btn {
+    font-family: "primaryRegular", sans-serif;
+    position: relative;
+    display: inline-block;
+    border: 0.2em solid var(--primary);
+    border-radius: 4px;
+    padding: 0.6em 2.2em 0.6em;
+    font-size: 0.875em;
+    color: var(--blanco);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: var(--primary);
+    border: 0;
+    -webkit-transition: all 0.3s ease-out !important;
+    transition: all 0.3s ease-out !important;
+}
+.btn:hover {
+    background-color: var(--primary);
+}
+.form-quality-adultos,
+.form-quality-ninos {
+    width: 80px;
+    overflow: hidden;
+    position: relative;
+    border: 0px;
+}
+
+.form-quality-adultos > input,
+.form-quality-ninos > input {
+    width: 83px;
+    border: none;
+    height: 60px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-color);
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.form-quality-adultos .qtybutton.dec,
+.form-quality-ninos .qtybutton2.dec {
+    font-size: 30px;
+    top: 33%;
+    line-height: 17px;
+    background: var(--primary);
+    padding: 0.1rem 0.2rem;
+    left: 5px;
+}
+.form-quality-adultos .qtybutton,
+.form-quality-ninos .qtybutton2 {
+    position: absolute;
+    color: var(--blanco);
+    left: 10px;
+    cursor: pointer;
+}
+.form-quality-adultos .qtybutton.inc,
+.form-quality-ninos .qtybutton2.inc {
+    left: auto;
+    right: 5px;
+    font-size: 20px;
+    top: 33%;
+    line-height: 17px;
+    padding: 0.1rem 0.2rem;
+    background: var(--primary);
+}
+.quantity-menu {
+    min-width: 250px;
+    cursor: default;
+}
+
+.form-quality-adultos .qtybutton.inc::selection,
+.form-quality-adultos .qtybutton.dec::selection,
+.form-quality-ninos .qtybutton2.inc::selection,
+.form-quality-ninos .qtybutton2.dec::selection {
+    background: transparent;
+}
+
+/* Nosotros */
+.bg-texto {
+    font-family: "primaryBold", sans-serif !important;
+    color: #f3f3f3;
+    font-weight: 500;
+    font-size: 10vw;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    margin-top: 4%;
+}
+.content-text-nosotros {
+    position: absolute;
+    font-family: "primaryBold", sans-serif !important;
+    top: 19%;
+    left: 12%;
+    z-index: 2;
+    margin-top: 4%;
+}
+.text-section-nosotros {
+    font-family: "primaryBold", sans-serif !important;
+    font-weight: 500;
 }

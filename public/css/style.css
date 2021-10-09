@@ -99,7 +99,7 @@ body {
     background: #16253e;
 }
 
-::selection {
+/* ::selection {
     background-color: #16253e;
     color: #fff;
 }
@@ -112,7 +112,7 @@ body {
 ::-moz-selection {
     background-color: #16253e;
     color: #fff;
-}
+} */
 
 /* 1.2 Typography */
 

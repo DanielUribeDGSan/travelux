@@ -187,9 +187,9 @@
     <!-- Title  -->
     <section class="section">
         <div class="container">
-            <h1 class="text-center"><span class="text-primary">Cotiza tu hotel, tu vuelo</span> <span
-                    class="text-secundary">tu viaje</span></h1>
-            <p class="mt-3 text-center fw-200">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            <h1 class="text-center"><span class="text-primary fw-700">Cotiza tu hotel, tu vuelo</span> <span
+                    class="text-secundary fw-700">tu viaje</span></h1>
+            <p class="mt-3 text-center fw-200 plr-10p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 Aenean commodo ligula eget dolor.</p>
         </div>
     </section>
@@ -215,45 +215,109 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-lg-2 col-md-6 col-6">
-                        <div class="input-field bg-transparent">
-                            <svg class="pl-1" width="20" height="16" viewBox="0 0 25 29" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12.5003 14.5C16.0672 14.5 18.9587 11.6085 18.9587 8.04165C18.9587 4.47481 16.0672 1.58331 12.5003 1.58331C8.93349 1.58331 6.04199 4.47481 6.04199 8.04165C6.04199 11.6085 8.93349 14.5 12.5003 14.5Z"
-                                    stroke="black" stroke-width="2" />
-                                <path
-                                    d="M18.9586 17.0833H19.4132C20.3576 17.0836 21.2693 17.4287 21.9771 18.0537C22.6849 18.6788 23.1401 19.5408 23.2572 20.4778L23.7623 24.513C23.8077 24.8765 23.7753 25.2455 23.6672 25.5955C23.5591 25.9456 23.3778 26.2686 23.1353 26.5432C22.8929 26.8178 22.5948 27.0377 22.2608 27.1883C21.9268 27.3389 21.5647 27.4167 21.1983 27.4166H3.80216C3.43582 27.4167 3.07365 27.3389 2.73969 27.1883C2.40573 27.0377 2.10762 26.8178 1.86514 26.5432C1.62266 26.2686 1.44136 25.9456 1.33327 25.5955C1.22518 25.2455 1.19277 24.8765 1.2382 24.513L1.74195 20.4778C1.8591 19.5404 2.31469 18.678 3.02307 18.0529C3.73144 17.4277 4.64378 17.083 5.58853 17.0833H6.04191"
-                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <input type="text" id="personas" placeholder="Personas" autocomplete="off" readonly>
-                            <svg width="20" height="12" viewBox="0 0 25 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M25 0H0L12.5 21L25 0Z" fill="black" />
-                            </svg>
+                        <div class="dropdown">
+                            <div id="dropdownMenuPersonas" type="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <div class="dropdown-menu quantity-menu">
+                                    <div class="container w-auto">
+                                        <div class="row w-auto d-flex align-items-center justify-content-center">
+                                            <div class="col-6">
+                                                <p>Adultos</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-quality-adultos">
+                                                    <input class="cart-plus-minus-box input-text qty text"
+                                                        name="qtyadultos" value="1" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <p>Niños</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-quality-ninos">
+                                                    <input class="cart-plus-minus-box input-text qty text qtyninos"
+                                                        name="qtyninos" id="qtyninos" value="0" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="row w-auto d-flex align-items-center justify-content-center content-qty-ninos">
 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-field bg-transparent">
+                                    <svg class="pl-1" width="20" height="16" viewBox="0 0 25 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.5003 14.5C16.0672 14.5 18.9587 11.6085 18.9587 8.04165C18.9587 4.47481 16.0672 1.58331 12.5003 1.58331C8.93349 1.58331 6.04199 4.47481 6.04199 8.04165C6.04199 11.6085 8.93349 14.5 12.5003 14.5Z"
+                                            stroke="black" stroke-width="2" />
+                                        <path
+                                            d="M18.9586 17.0833H19.4132C20.3576 17.0836 21.2693 17.4287 21.9771 18.0537C22.6849 18.6788 23.1401 19.5408 23.2572 20.4778L23.7623 24.513C23.8077 24.8765 23.7753 25.2455 23.6672 25.5955C23.5591 25.9456 23.3778 26.2686 23.1353 26.5432C22.8929 26.8178 22.5948 27.0377 22.2608 27.1883C21.9268 27.3389 21.5647 27.4167 21.1983 27.4166H3.80216C3.43582 27.4167 3.07365 27.3389 2.73969 27.1883C2.40573 27.0377 2.10762 26.8178 1.86514 26.5432C1.62266 26.2686 1.44136 25.9456 1.33327 25.5955C1.22518 25.2455 1.19277 24.8765 1.2382 24.513L1.74195 20.4778C1.8591 19.5404 2.31469 18.678 3.02307 18.0529C3.73144 17.4277 4.64378 17.083 5.58853 17.0833H6.04191"
+                                            stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <input type="text" id="personas" placeholder="Personas" autocomplete="off" readonly>
+                                    <svg width="20" height="12" viewBox="0 0 25 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25 0H0L12.5 21L25 0Z" fill="black" />
+                                    </svg>
+
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="row">
 
                     <div class="col-lg-2 col-md-6 col-6">
-                        <div class="input-field">
-                            <svg width="20" height="18" viewBox="0 0 36 36" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M23.4301 16.83C23.2431 16.6404 22.9885 16.5328 22.7221 16.5309C22.4558 16.529 22.1997 16.633 22.0101 16.82C21.8204 17.007 21.7129 17.2616 21.711 17.5279C21.7091 17.7942 21.8131 18.0504 22.0001 18.24L25.7201 22H7.83008C7.56486 22 7.31051 22.1054 7.12297 22.2929C6.93544 22.4804 6.83008 22.7348 6.83008 23C6.83008 23.2652 6.93544 23.5196 7.12297 23.7071C7.31051 23.8946 7.56486 24 7.83008 24H25.7201L22.0001 27.7C21.9075 27.7932 21.8342 27.9038 21.7843 28.0254C21.7345 28.1469 21.7091 28.2771 21.7095 28.4085C21.71 28.5399 21.7363 28.6699 21.787 28.7912C21.8378 28.9124 21.9118 29.0224 22.0051 29.115C22.0983 29.2076 22.2089 29.2809 22.3304 29.3307C22.452 29.3806 22.5822 29.406 22.7136 29.4056C22.845 29.4051 22.975 29.3788 23.0962 29.328C23.2175 29.2773 23.3275 29.2032 23.4201 29.11L29.5301 23L23.4301 16.83Z"
-                                    fill="black" />
-                                <path
-                                    d="M13.2399 18.45C13.4385 18.4512 13.633 18.3931 13.7985 18.2833C13.9641 18.1735 14.0931 18.0169 14.1693 17.8335C14.2455 17.6501 14.2653 17.4481 14.2262 17.2533C14.1871 17.0586 14.091 16.8799 13.9499 16.74L10.2399 13H28.1199C28.3851 13 28.6395 12.8947 28.827 12.7071C29.0146 12.5196 29.1199 12.2652 29.1199 12C29.1199 11.7348 29.0146 11.4804 28.827 11.2929C28.6395 11.1054 28.3851 11 28.1199 11H10.2399L13.9499 7.27002C14.0425 7.17678 14.1158 7.06622 14.1657 6.94464C14.2155 6.82307 14.2409 6.69287 14.2405 6.56148C14.24 6.43008 14.2137 6.30007 14.163 6.17885C14.1123 6.05764 14.0382 5.9476 13.9449 5.85502C13.8517 5.76243 13.7411 5.68912 13.6196 5.63927C13.498 5.58942 13.3678 5.564 13.2364 5.56446C12.971 5.5654 12.7169 5.67171 12.5299 5.86002L6.41992 12L12.5299 18.14C12.6217 18.2363 12.7318 18.3133 12.8537 18.3666C12.9756 18.4198 13.1069 18.4482 13.2399 18.45Z"
-                                    fill="black" />
-                            </svg>
-                            <input type="text" id="ida_vuelta" name="ida_vuelta" placeholder="Ida y vuelta"
-                                autocomplete="off" value="">
-                            <svg width="20" height="12" viewBox="0 0 25 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M25 0H0L12.5 21L25 0Z" fill="black" />
-                            </svg>
-
+                        <div class="dropdown">
+                            <div id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <div class="dropdown-menu p-2">
+                                    <form class="px-4 py-3">
+                                        <div class="form-group">
+                                            <label for="exampleDropdownFormEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                                placeholder="email@example.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleDropdownFormPassword1">Password</label>
+                                            <input type="password" class="form-control"
+                                                id="exampleDropdownFormPassword1" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                <label class="form-check-label" for="dropdownCheck">
+                                                    Remember me
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Sign in</button>
+                                    </form>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">New around here? Sign up</a>
+                                    <a class="dropdown-item" href="#">Forgot password?</a>
+                                </div>
+                                <div class="input-field">
+                                    <svg width="20" height="18" viewBox="0 0 36 36" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M23.4301 16.83C23.2431 16.6404 22.9885 16.5328 22.7221 16.5309C22.4558 16.529 22.1997 16.633 22.0101 16.82C21.8204 17.007 21.7129 17.2616 21.711 17.5279C21.7091 17.7942 21.8131 18.0504 22.0001 18.24L25.7201 22H7.83008C7.56486 22 7.31051 22.1054 7.12297 22.2929C6.93544 22.4804 6.83008 22.7348 6.83008 23C6.83008 23.2652 6.93544 23.5196 7.12297 23.7071C7.31051 23.8946 7.56486 24 7.83008 24H25.7201L22.0001 27.7C21.9075 27.7932 21.8342 27.9038 21.7843 28.0254C21.7345 28.1469 21.7091 28.2771 21.7095 28.4085C21.71 28.5399 21.7363 28.6699 21.787 28.7912C21.8378 28.9124 21.9118 29.0224 22.0051 29.115C22.0983 29.2076 22.2089 29.2809 22.3304 29.3307C22.452 29.3806 22.5822 29.406 22.7136 29.4056C22.845 29.4051 22.975 29.3788 23.0962 29.328C23.2175 29.2773 23.3275 29.2032 23.4201 29.11L29.5301 23L23.4301 16.83Z"
+                                            fill="black" />
+                                        <path
+                                            d="M13.2399 18.45C13.4385 18.4512 13.633 18.3931 13.7985 18.2833C13.9641 18.1735 14.0931 18.0169 14.1693 17.8335C14.2455 17.6501 14.2653 17.4481 14.2262 17.2533C14.1871 17.0586 14.091 16.8799 13.9499 16.74L10.2399 13H28.1199C28.3851 13 28.6395 12.8947 28.827 12.7071C29.0146 12.5196 29.1199 12.2652 29.1199 12C29.1199 11.7348 29.0146 11.4804 28.827 11.2929C28.6395 11.1054 28.3851 11 28.1199 11H10.2399L13.9499 7.27002C14.0425 7.17678 14.1158 7.06622 14.1657 6.94464C14.2155 6.82307 14.2409 6.69287 14.2405 6.56148C14.24 6.43008 14.2137 6.30007 14.163 6.17885C14.1123 6.05764 14.0382 5.9476 13.9449 5.85502C13.8517 5.76243 13.7411 5.68912 13.6196 5.63927C13.498 5.58942 13.3678 5.564 13.2364 5.56446C12.971 5.5654 12.7169 5.67171 12.5299 5.86002L6.41992 12L12.5299 18.14C12.6217 18.2363 12.7318 18.3133 12.8537 18.3666C12.9756 18.4198 13.1069 18.4482 13.2399 18.45Z"
+                                            fill="black" />
+                                    </svg>
+                                    <input type="text" id="ida_y_vuelta" readonly value="Ida y vuelta">
+                                    <svg width="20" height="12" viewBox="0 0 25 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25 0H0L12.5 21L25 0Z" fill="black" />
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -272,8 +336,12 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-
-                            <input type="text" id="claseM" placeholder="Clase" autocomplete="off" readonly>
+                            <select id="claseM">
+                                <option class="text-center" value="0">Clase</option>
+                                <option class="text-center" value="1">Turista</option>
+                                <option class="text-center" value="2">Business</option>
+                                <option class="text-center" value="2">Primera</option>
+                            </select>
                             <svg width="20" height="12" viewBox="0 0 25 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M25 0H0L12.5 21L25 0Z" fill="black" />
@@ -343,8 +411,12 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-
-                            <input type="text" id="clase" placeholder="Clase" autocomplete="off" readonly>
+                            <select id="clase">
+                                <option class="text-center" value="0">Clase</option>
+                                <option class="text-center" value="1">Turista</option>
+                                <option class="text-center" value="2">Business</option>
+                                <option class="text-center" value="2">Primera</option>
+                            </select>
                             <svg width="20" height="12" viewBox="0 0 25 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M25 0H0L12.5 21L25 0Z" fill="black" />
@@ -367,7 +439,7 @@
                                     stroke-linejoin="round" />
                             </svg>
 
-                            <input type="text" id="date1" placeholder="mar, 29 sep" autocomplete="off">
+                            <input type="text" id="fecha_inicio" placeholder="mar, 29 sep" autocomplete="off" value="">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-6">
@@ -384,7 +456,7 @@
                                 <path d="M2.4165 12.0834H26.5832" stroke="black" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
-                            <input type="text" id="date2" placeholder="mar, 29 sep" autocomplete="off">
+                            <input type="text" id="fecha_regreso" placeholder="mar, 29 sep" autocomplete="off">
                         </div>
                     </div>
                     <div
@@ -426,12 +498,48 @@
                             <input type="text" id="money" placeholder="$250 - $750 US" autocomplete="off">
                         </div>
                     </div>
-
-
+                    <div class="col-lg-2 col-md-6 col-12 mt-5">
+                        <button class="btn w-100">Enviar</button>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 mt-5 d-flex align-items-center justify-content-center">
+                        <a class="w-100"><svg width="30" height="30" viewBox="0 0 59 59" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M29.4998 0C28.8508 0 28.2091 0.0221252 27.5712 0.062688L27.8072 3.74284C28.9344 3.66999 30.0651 3.66999 31.1923 3.74284L31.4283 0.062688C30.7863 0.0210603 30.1431 0.000153445 29.4998 0V0ZM23.7472 0.560504C22.4713 0.814944 21.225 1.15051 20.0154 1.55614L21.1991 5.05191C22.2575 4.69054 23.3453 4.39922 24.4589 4.17797L23.7472 0.564192V0.560504ZM38.9841 1.55982C37.7646 1.14639 36.5192 0.813793 35.256 0.564192L34.5406 4.17797C35.6543 4.39922 36.7421 4.69422 37.8004 5.05191L38.9841 1.55982ZM45.8908 4.97079C44.8206 4.25447 43.7046 3.609 42.5499 3.03852L40.9164 6.34255C41.9304 6.84405 42.9076 7.41193 43.8406 8.03512L45.8908 4.97079ZM16.4459 3.03852C15.288 3.61009 14.1744 4.25541 13.1087 4.97079L15.159 8.03144C16.0962 7.40587 17.073 6.84173 18.0832 6.34255L16.4459 3.03852ZM10.0481 7.31974C9.08192 8.16788 8.16742 9.08238 7.31928 10.0485L10.0923 12.4823C10.8372 11.6342 11.6337 10.8376 12.4818 10.0928L10.0481 7.31974ZM51.6803 10.0485C50.8308 9.08076 49.9192 8.16925 48.9515 7.31974L46.5177 10.0928C47.3658 10.8376 48.166 11.6342 48.9072 12.4823L51.6803 10.0485ZM55.9615 16.4464C55.391 15.2929 54.7456 14.1781 54.0292 13.1092L50.9686 15.1594C51.5918 16.0924 52.1559 17.0696 52.6575 18.0836L55.9615 16.4501V16.4464ZM4.97033 13.1092C4.25495 14.1749 3.60594 15.2885 3.03806 16.4501L6.34209 18.0836C6.84359 17.0696 7.41147 16.0924 8.03466 15.1594L4.97033 13.1092ZM1.55936 20.0159C1.14592 21.2354 0.813321 22.4808 0.563731 23.744L4.17751 24.4594C4.39876 23.3457 4.69376 22.2579 5.05145 21.1996L1.55936 20.0159ZM58.4395 23.7477C58.1901 22.4832 57.8575 21.2366 57.4439 20.0159L53.9481 21.1996C54.3095 22.2579 54.6008 23.3457 54.822 24.4594L58.4358 23.744L58.4395 23.7477ZM0.0622271 27.5717C-0.0207424 28.856 -0.0207424 30.1444 0.0622271 31.4288L3.74238 31.1928C3.66953 30.0656 3.66953 28.9349 3.74238 27.8077L0.0622271 27.5717ZM59 29.5002C58.9999 28.8569 58.979 28.2137 58.9373 27.5717L55.2572 27.8077C55.3301 28.9349 55.3301 30.0656 55.2572 31.1928L58.9373 31.4288C58.979 30.7868 58.9999 30.1436 59 29.5002ZM0.560043 35.2528C0.814483 36.5287 1.15005 37.775 1.55568 38.9846L5.05145 37.8009C4.68877 36.7347 4.39682 35.6457 4.17751 34.5411L0.563731 35.2565L0.560043 35.2528ZM57.4402 38.9846C57.8532 37.775 58.1851 36.5287 58.4358 35.2565L54.822 34.5411C54.6008 35.6547 54.3058 36.7425 53.9481 37.8009L57.4402 38.9846ZM3.03806 42.5541C3.60868 43.7074 4.25414 44.8222 4.97033 45.8913L8.03098 43.841C7.40478 42.9042 6.84061 41.9274 6.34209 40.9168L3.03806 42.5504V42.5541ZM54.0292 45.8913C54.7446 44.8256 55.3936 43.712 55.9615 42.5504L52.6575 40.9168C52.1559 41.9309 51.5881 42.9081 50.9649 43.841L54.0292 45.8913ZM7.31928 48.9519C8.16742 49.9181 9.08192 50.8326 10.0481 51.6807L12.4818 48.9077C11.6343 48.1639 10.8361 47.3657 10.0923 46.5182L7.31928 48.9519ZM48.9515 51.6807C49.9176 50.8326 50.8321 49.9181 51.6803 48.9519L48.9072 46.5182C48.166 47.3663 47.3658 48.1665 46.5177 48.9077L48.9515 51.6807ZM42.5536 55.9619C43.7115 55.3904 44.8251 54.7451 45.8908 54.0297L43.8406 50.969C42.9034 51.5946 41.9266 52.1587 40.9164 52.6579L42.5499 55.9619H42.5536ZM13.1087 54.0297C14.1744 54.7451 15.288 55.3941 16.4496 55.9619L18.0832 52.6579C17.0725 52.1582 16.0957 51.5928 15.159 50.9653L13.1087 54.0297ZM20.0154 57.4406C21.225 57.8536 22.4713 58.1855 23.7435 58.4363L24.4589 54.8225C23.3543 54.6031 22.2654 54.3111 21.1991 53.9485L20.0154 57.4406ZM35.2523 58.44C36.5168 58.1905 37.7634 57.8579 38.9841 57.4443L37.8004 53.9485C36.7342 54.3111 35.6452 54.6031 34.5406 54.8225L35.256 58.4363L35.2523 58.44ZM27.5712 58.9378C28.8556 59.0209 30.144 59.0209 31.4283 58.9378L31.1923 55.2576C30.0651 55.3305 28.9344 55.3305 27.8072 55.2576L27.5712 58.9378ZM31.3435 16.5939C31.3435 16.1049 31.1493 15.6359 30.8035 15.2901C30.4577 14.9444 29.9888 14.7501 29.4998 14.7501C29.0108 14.7501 28.5418 14.9444 28.196 15.2901C27.8503 15.6359 27.656 16.1049 27.656 16.5939V27.6565H16.5934C16.1044 27.6565 15.6355 27.8507 15.2897 28.1965C14.9439 28.5423 14.7497 29.0112 14.7497 29.5002C14.7497 29.9892 14.9439 30.4582 15.2897 30.804C15.6355 31.1497 16.1044 31.344 16.5934 31.344H27.656V42.4066C27.656 42.8956 27.8503 43.3645 28.196 43.7103C28.5418 44.0561 29.0108 44.2503 29.4998 44.2503C29.9888 44.2503 30.4577 44.0561 30.8035 43.7103C31.1493 43.3645 31.3435 42.8956 31.3435 42.4066V31.344H42.4061C42.8951 31.344 43.3641 31.1497 43.7099 30.804C44.0556 30.4582 44.2499 29.9892 44.2499 29.5002C44.2499 29.0112 44.0556 28.5423 43.7099 28.1965C43.3641 27.8507 42.8951 27.6565 42.4061 27.6565H31.3435V16.5939Z"
+                                    fill="black" />
+                            </svg>
+                            <span class="ml-3">Agregar otro destino</span></a>
+                    </div>
+                </div>
             </form>
         </div>
     </section>
     <!-- EndForm  -->
+
+    {{-- Nosotros --}}
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="{{ asset('img/sectionNosotros/imagen1.png') }}"
+                        alt="travelux" />
+                </div>
+                <div class="col-lg-6 position-relative">
+                    <p class="bg-texto">nosotros</p>
+                    <div class="content-text-nosotros">
+                        <p class="text-section-nosotros">Somos una agencia de viajes
+                            boutique con más de: </p>
+                        <h2 class="text-secundary mt-3">10 años</h2>
+                        <p class="text-section-nosotros mt-3">de experiencia en el sector.</p>
+                        <p class="mt-3">Somos los mejores en conseguir tanto hoteles como vuelos de <span
+                                class="text-section-nosotros">lujo a un precio
+                                inmejorable.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- EndNosotros --}}
 
 
 </x-layout-web>
