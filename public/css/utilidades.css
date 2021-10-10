@@ -43,10 +43,40 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    height: 40vw;
+    height: auto;
 }
 .plr-10p {
     padding: 0rem 10%;
+}
+.texto-lg-3r {
+    font-size: 3rem;
+}
+.texto-lg-2r {
+    font-size: 2rem;
+}
+.border-bottom-white {
+    border-bottom: 5px solid #fff;
+    width: auto;
+}
+.p-10p {
+    padding: 10%;
+}
+.cuadro-primary {
+    background: var(--primary);
+    padding: 1rem;
+    height: 22rem;
+}
+.cuadro-secundary {
+    background: var(--secundary);
+    padding: 1rem;
+    height: 22rem;
+}
+small,
+.small {
+    font-size: 1.1rem;
+}
+.mt-6 {
+    margin-top: 5rem;
 }
 @media (min-width: 1000px) {
     .ocultar-pc {
@@ -69,10 +99,19 @@
     .ml-md-0 {
         margin-left: 0px;
     }
+    .plr-10p {
+        padding: 0rem 0rem;
+    }
+    .text-center-md {
+        text-align: center;
+    }
 }
 
 @media (max-width: 767px) {
-    .plr-10p {
-        padding: 0rem 0rem;
+    .texto-lg-3r {
+        font-size: 2rem;
+    }
+    .texto-lg-2r {
+        font-size: 1.5rem;
     }
 }

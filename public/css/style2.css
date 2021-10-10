@@ -256,6 +256,11 @@ textarea.form-control-simple {
     position: absolute;
     margin-top: 4%;
 }
+@media (max-width: 991px) {
+    .bg-texto {
+        display: none;
+    }
+}
 .content-text-nosotros {
     position: absolute;
     font-family: "primaryBold", sans-serif !important;
@@ -263,6 +268,15 @@ textarea.form-control-simple {
     left: 12%;
     z-index: 2;
     margin-top: 4%;
+}
+@media (max-width: 991px) {
+    .content-text-nosotros {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        z-index: 2;
+        margin-top: 4%;
+    }
 }
 .text-section-nosotros {
     font-family: "primaryBold", sans-serif !important;
