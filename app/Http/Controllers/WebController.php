@@ -10,4 +10,8 @@ class WebController extends Controller
     {
         return view('inicio.inicio');
     }
+    public function contacto()
+    {
+        return view('contacto.contacto');
+    }
 }

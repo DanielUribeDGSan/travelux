@@ -282,3 +282,25 @@ textarea.form-control-simple {
     font-family: "primaryBold", sans-serif !important;
     font-weight: 500;
 }
+
+/* Contacto */
+.cuadro-blanco {
+    background: var(--blanco);
+    padding: 2rem;
+    width: 29rem;
+    height: 29rem;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+    .cuadro-blanco {
+        background: var(--blanco);
+        padding: 2rem;
+        width: 91vw;
+        height: 50vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20px;
+    }
+}

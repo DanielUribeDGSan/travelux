@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 // Inicio
 Route::get('/', [App\Http\Controllers\WebController::class, 'inicio'])->name('web.inicio');
+Route::get('/contacto', [App\Http\Controllers\WebController::class, 'contacto'])->name('web.contacto');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

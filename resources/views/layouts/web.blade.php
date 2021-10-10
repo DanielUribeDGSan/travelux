@@ -99,7 +99,7 @@
                 </a>
                 <ul class="navbar-desctop-menu">
                     <li class="active">
-                        <a href="index.html">Inicio</a>
+                        <a href="#inicio">Inicio</a>
                         {{-- <ul>
                             <li class="active"><a href="index.html">Home - Light</a></li>
                             <li>
@@ -108,16 +108,16 @@
                         </ul> --}}
                     </li>
                     <li>
-                        <a href="about.html">Cotizador</a>
+                        <a href="#cotizador">Cotizador</a>
                     </li>
                     <li>
-                        <a href="about.html">Nosotros</a>
+                        <a href="#nosotros">Nosotros</a>
                     </li>
                     <li>
-                        <a href="about.html">¿Como lo hacemos?</a>
+                        <a href="#como_lo_hacemos">¿Como lo hacemos?</a>
                     </li>
                     <li>
-                        <a href="contacts.html">Contacto</a>
+                        <a href="{{ route('web.contacto') }}">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -143,38 +143,21 @@
             <div class="collapse navbar-collapse" id="navbar-mobile">
                 <ul class="navbar-nav-mobile">
                     <li class="active">
-                        <a href="#">Home <i class="fa fa-angle-down"></i></a>
-                        <ul>
-                            <li class="active"><a href="index.html">— Home - Light</a></li>
-                            <li>
-                                <a href="../dark/index.html">Home - Dark</a>
-                            </li>
-                        </ul>
+                        <a href="#inicio">Home <i class="fa fa-angle-down"></i></a>
                     </li>
                     <li>
-                        <a href="about.html">About us</a>
+                        <a href="#cotizador">Cotizador</a>
                     </li>
                     <li>
-                        <a href="#">Projects <i class="fa fa-angle-down"></i></a>
-                        <ul>
-                            <li><a href="projects.html">Projects - List</a></li>
-                            <li>
-                                <a href="project.html">Project - details</a>
-                            </li>
-                        </ul>
+                        <a href="#nosotros">Nosotros</a>
                     </li>
                     <li>
-                        <a href="#">Blog <i class="fa fa-angle-down"></i></a>
-                        <ul>
-                            <li><a href="blog.html">Blog - List</a></li>
-                            <li>
-                                <a href="blog-details.html">Blog - Post</a>
-                            </li>
-                        </ul>
+                        <a href="#como_lo_hacemos">¿Como lo hacemos?</a>
                     </li>
                     <li>
-                        <a href="contacts.html">Contacts</a>
+                        <a href="{{ route('web.contacto') }}">Contacto</a>
                     </li>
+
                 </ul>
             </div>
         </nav>
