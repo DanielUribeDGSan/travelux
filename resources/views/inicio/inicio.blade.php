@@ -574,12 +574,12 @@
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-lg-3">
                     <p class="texto-lg-3r text-white fw-700 d-inline-block">¿Cómo lo hacemos?</p>
-                    <div class="border-bottom-white"></div>
+                    <div class="border-bottom-white mb-lg-0 mb-md-3 mb-3"></div>
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-8">
                     <div class="row p-0 m-0 d-flex align-items-center justify-content-center">
-                        <div class="col-lg-6 mt-3">
+                        <div class="col-lg-6 col-md-6 col-12 mt-3">
                             <div class="cuadro-primary">
                                 <p class="texto-lg-3r text-white fw-700">1</p>
                                 <p class="text-white">
@@ -592,7 +592,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-6 mt-3">
+                        <div class="col-lg-6 col-md-6 col-12 mt-3">
                             <div class="cuadro-primary">
                                 <p class="texto-lg-3r text-white fw-700">2</p>
                                 <p class="text-white">
@@ -604,7 +604,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-6 mt-3">
+                        <div class="col-lg-6 col-md-6 col-12 mt-3">
                             <div class="cuadro-primary">
                                 <p class="texto-lg-3r text-white fw-700">3</p>
                                 <p class="text-white">
@@ -615,7 +615,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-6 mt-3">
+                        <div class="col-lg-6 col-md-6 col-12 mt-3">
                             <div class="cuadro-secundary">
                                 <p class="texto-lg-3r text-white fw-700">4</p>
                                 <p class="text-white">
@@ -630,9 +630,9 @@
                 </div>
             </div>
             <div class="row d-flex align-items-center justify-content-center mt-5">
-                <div class="col-lg-4">
+                <div class="col-lg-4 mt-lg-0 mt-md-3 mt-3">
                     <a href="tel:55 000 000">
-                        <p class="texto-lg-2r text-white">
+                        <p class="texto-lg-2r text-white text-center-md">
                             <svg width="35" height="35" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -643,9 +643,9 @@
                         </p>
                     </a>
                 </div>
-                <div class=" col-lg-4">
+                <div class="col-lg-4 mt-lg-0 mt-md-3 mt-3">
                     <a href="https://wa.me/5500000000?text=Me%20interesa%20un%20viaje%20a:%20" target="_blank">
-                        <p class="texto-lg-2r text-white">
+                        <p class="texto-lg-2r text-white text-center-md">
                             <svg width="35" height="35" viewBox="0 0 47 47" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -657,9 +657,9 @@
                         </p>
                     </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 mt-lg-0 mt-md-3 mt-3">
                     <a href="mailto:info@travelux.com">
-                        <p class="texto-lg-2r text-white">
+                        <p class="texto-lg-2r text-white text-center-md">
                             <svg width="35" height="35" viewBox="0 0 41 41" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
