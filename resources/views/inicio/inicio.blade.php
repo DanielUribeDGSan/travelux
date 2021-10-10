@@ -6,7 +6,7 @@
 
         <!-- Start revolution slider -->
 
-        <div class="rev_slider_wrapper">
+        <div class="rev_slider_wrapper" id="inicio">
             <div id="rev_slider" class="rev_slider fullscreenbanner">
                 <ul>
 
@@ -61,8 +61,8 @@
                             data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeInOut;"
                             data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
                             data-mask_out="x:inherit;y:inherit;" data-start="1500" data-splitin="none"
-                            data-splitout="none" data-responsive_offset="on"><a href="#about"
-                                class="btn js-target-scroll">Look more <i class="icon-next"></i></a>
+                            data-splitout="none" data-responsive_offset="on"><a href="#cotizador"
+                                class="btn">Look more <i class="icon-next"></i></a>
                         </div> --}}
                     </li>
 
@@ -186,7 +186,7 @@
 
     <!-- Title  -->
     <section class="section">
-        <div class="container">
+        <div class="container" id="cotizador">
             <h1 class="text-center"><span class="text-primary fw-700">Cotiza tu hotel, tu vuelo</span> <span
                     class="text-secundary fw-700">tu viaje</span></h1>
             <p class="mt-3 text-center fw-200 plr-10p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -488,7 +488,7 @@
     <!-- EndForm  -->
 
     {{-- Nosotros --}}
-    <section class="section">
+    <section class="section" id="nosotros">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -539,7 +539,7 @@
 
     {{-- Como lo hacemos --}}
 
-    <section class="section">
+    <section class="section" id="como_lo_hacemos">
         <div class="bg-image p-10p" style="background-image: url({{ asset('img/banners/banner1.png') }})">
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-lg-3">

@@ -93,6 +93,24 @@ small,
 .hv-100 {
     height: 100vh;
 }
+.btn-secundary {
+    font-family: "primaryRegular", sans-serif;
+    position: relative;
+    display: inline-block !important;
+    border: 0.2em solid var(--secundary) !important;
+    border-radius: 4px;
+    padding: 0.6em 2.2em 0.6em;
+    font-size: 0.875em;
+    color: var(--blanco) !important;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: var(--secundary) !important;
+    margin-top: -12px;
+    border: 0;
+    -webkit-transition: all 0.3s ease-out !important;
+    transition: all 0.3s ease-out !important;
+}
 
 @media (min-width: 1000px) {
     .ocultar-pc {

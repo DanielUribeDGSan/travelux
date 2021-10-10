@@ -99,25 +99,25 @@
                 </a>
                 <ul class="navbar-desctop-menu">
                     <li class="active">
-                        <a href="#inicio">Inicio</a>
+                        <a class="js-target-scroll" href="#inicio">Inicio</a>
                         {{-- <ul>
-                            <li class="active"><a href="index.html">Home - Light</a></li>
+                            <li class="active"><a class="js-target-scroll" href="index.html">Home - Light</a></li>
                             <li>
-                                <a href="../dark/index.html">Home - Dark</a>
+                                <a class="js-target-scroll" href="../dark/index.html">Home - Dark</a>
                             </li>
                         </ul> --}}
                     </li>
                     <li>
-                        <a href="#cotizador">Cotizador</a>
+                        <a class="js-target-scroll" href="#cotizador">Cotizador</a>
                     </li>
                     <li>
-                        <a href="#nosotros">Nosotros</a>
+                        <a class="js-target-scroll" href="#nosotros">Nosotros</a>
                     </li>
                     <li>
-                        <a href="#como_lo_hacemos">¿Como lo hacemos?</a>
+                        <a class="js-target-scroll" href="#como_lo_hacemos">¿Como lo hacemos?</a>
                     </li>
                     <li>
-                        <a href="{{ route('web.contacto') }}">Contacto</a>
+                        <a class="btn-secundary js-target-scroll" href="{{ route('web.contacto') }}">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -143,19 +143,19 @@
             <div class="collapse navbar-collapse" id="navbar-mobile">
                 <ul class="navbar-nav-mobile">
                     <li class="active">
-                        <a href="#inicio">Home <i class="fa fa-angle-down"></i></a>
+                        <a class="js-target-scroll" href="#inicio">Home <i class="fa fa-angle-down"></i></a>
                     </li>
                     <li>
-                        <a href="#cotizador">Cotizador</a>
+                        <a class="js-target-scroll" href="#cotizador">Cotizador</a>
                     </li>
                     <li>
-                        <a href="#nosotros">Nosotros</a>
+                        <a class="js-target-scroll" href="#nosotros">Nosotros</a>
                     </li>
                     <li>
-                        <a href="#como_lo_hacemos">¿Como lo hacemos?</a>
+                        <a class="js-target-scroll" href="#como_lo_hacemos">¿Como lo hacemos?</a>
                     </li>
                     <li>
-                        <a href="{{ route('web.contacto') }}">Contacto</a>
+                        <a class="js-target-scroll" href="{{ route('web.contacto') }}">Contacto</a>
                     </li>
 
                 </ul>
