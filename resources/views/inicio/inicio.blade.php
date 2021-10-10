@@ -215,7 +215,7 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-lg-2 col-md-6 col-6">
-                        <div class="dropdown">
+                        <div class="dropdown pointer">
                             <div id="dropdownMenuPersonas" type="button" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
                                 <div class="dropdown-menu quantity-menu">

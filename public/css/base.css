@@ -77,10 +77,8 @@ input {
 p {
     font-size: 1.6rem;
 }
-@media (max-width: 767px) {
-    .dropdown p {
-        font-size: 1.1rem;
-    }
+.dropdown p {
+    font-size: 1rem;
 }
 
 h1,
