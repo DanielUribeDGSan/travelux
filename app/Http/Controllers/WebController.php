@@ -14,4 +14,8 @@ class WebController extends Controller
     {
         return view('contacto.contacto');
     }
+    public function registroCompletado()
+    {
+        return view('mensajes.registro');
+    }
 }

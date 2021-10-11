@@ -131,6 +131,32 @@ textarea.form-control-simple {
     align-items: center;
     justify-content: center;
 }
+.input-field-2 {
+    width: 100%;
+    background-color: var(--input);
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.input-field-2 select {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 200;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    appearance: none;
+    width: 99%;
+    height: 100%;
+    background: url("../img/form/flecha2.svg") no-repeat right;
+}
 .input-field input::placeholder {
     color: var(--primary);
     font-weight: 200;
@@ -303,4 +329,58 @@ textarea.form-control-simple {
         margin-right: 5%;
         margin-top: 20px;
     }
+}
+
+/* Registro */
+.bg-registro {
+    height: 35vh !important;
+}
+
+/* Alertas */
+.swal2-html-container {
+    z-index: 1;
+    justify-content: center;
+    margin: 1em 1.6em 0.3em;
+    padding: 0;
+    overflow: auto;
+    color: var(--primary);
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 1em;
+}
+.swal2-title {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: 0.8em 1em 0;
+    color: var(--primary);
+    font-size: 1.875em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+    word-wrap: break-word;
+}
+.swal2-icon.swal2-error {
+    border-color: var(--secundary);
+    color: var(--secundary);
+}
+.swal2-icon.swal2-error [class^="swal2-x-mark-line"] {
+    display: block;
+    position: absolute;
+    top: 2.3125em;
+    width: 2.9375em;
+    height: 0.3125em;
+    border-radius: 0.125em;
+    background-color: var(--secundary);
 }

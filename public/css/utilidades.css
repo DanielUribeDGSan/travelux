@@ -73,6 +73,9 @@
 .ml-10p {
     margin-left: 10%;
 }
+.ml-5p {
+    margin-left: 5%;
+}
 .cuadro-primary {
     background: var(--primary);
     padding: 1rem;
@@ -91,7 +94,7 @@ small,
     margin-top: 5rem;
 }
 .hv-100 {
-    height: 100vh;
+    min-height: 100vh;
 }
 .btn-secundary {
     font-family: "primaryRegular", sans-serif;
@@ -111,7 +114,13 @@ small,
     -webkit-transition: all 0.3s ease-out !important;
     transition: all 0.3s ease-out !important;
 }
-
+.bg-primary {
+    background: var(--primary) !important;
+}
+.disabled-input {
+    pointer-events: none;
+    opacity: 0.4;
+}
 @media (min-width: 1000px) {
     .ocultar-pc {
         display: none !important;
@@ -159,5 +168,8 @@ small,
     }
     .cuadro-secundary {
         height: auto;
+    }
+    .ml-10p {
+        margin-left: 0%;
     }
 }

@@ -18,6 +18,10 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     {{-- Fontawosone --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    {{-- Sweet --}}
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -26,6 +30,10 @@
     <link href="{{ asset('css/style2.css') }}" rel="stylesheet" media="screen">
     <link href="{{ asset('css/utilidades.css') }}" rel="stylesheet" media="screen">
     <link href="{{ asset('css/base.css') }}" rel="stylesheet" media="screen">
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    @livewireStyles
 
 </head>
 
@@ -302,7 +310,7 @@
     </div>
 
     <!-- SCRIPTS -->
-
+    @livewireScripts
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     {{-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> --}}
@@ -344,6 +352,7 @@
         });
     </script>
 
+    @stack('script')
 
 </body>
 

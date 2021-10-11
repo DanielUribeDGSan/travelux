@@ -95,3 +95,40 @@ const validarNinos = () => {
     const selectElement = document.querySelector('#qtyninos');
     console.log(selectElement.value);
 }
+
+// Validar tipo de viaje
+const tipoViaje = () => {
+    const select = document.querySelector('#ida_y_vuelta').value;
+    const fechaInicio = document.querySelector('.input-fecha-inicio');
+    const fechaFin = document.querySelector('.input-fecha-fin');
+
+    if (select == 1) {
+        fechaFin.classList.remove('disabled-input');
+
+    } else if (select == 2) {
+        fechaFin.classList.add('disabled-input');
+        document.querySelector('#fecha_regreso').value = "";
+    }
+}
+
+// Validar formualrio
+const validar_email = (email) => {
+    const regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email) ? true : false;
+};
+
+const registrarForm = (e) => {
+    e.preventDefault();
+
+    const name = document.querySelector('#name').value;
+
+    if (name == '') {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Ups...',
+            html: 'El campo "<b>Nombre</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+}
