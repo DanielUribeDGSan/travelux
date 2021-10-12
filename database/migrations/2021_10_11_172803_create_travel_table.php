@@ -20,15 +20,15 @@ class CreateTravelTable extends Migration
             $table->string('phone', 20);
             $table->string('email');
             $table->string('adults', 4);
-            $table->string('children', 4);
-            $table->json('children_ages');
+            $table->string('children', 4)->nullable();
+            $table->json('children_ages')->nullable();
             $table->enum('type', [Travel::IDAYVUELTA, Travel::SOLOIDA])->default(Travel::IDAYVUELTA);
             $table->string('origin');
             $table->string('destination');
             $table->string('hotel');
             $table->string('class');
             $table->date('start_date');
-            $table->date('return_date');
+            $table->date('return_date')->nullable();
             $table->string('price');
             $table->timestamps();
         });
