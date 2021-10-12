@@ -3,18 +3,21 @@
         @csrf
         <div class="row espacio-form">
             <div class="col-lg-4 col-md-4 col-12 form-group mt-lg-0 mt-md-3 mt-3">
-                <input type="text" class="form-control-simple" id="name" placeholder="Nombre *" autocomplete="off">
+                <input type="text" class="form-control-simple" id="name" placeholder="Nombre *" autocomplete="off"
+                    onkeyup="onlyLetrasNum(this)" maxlength="255" wire:model.defer="createForm.name">
             </div>
             <div class="col-lg-4 col-md-4 col-12 form-group mt-lg-0 mt-md-3 mt-3">
-                <input type="text" class="form-control-simple" id="phone" placeholder="Teléfono *" autocomplete="off">
+                <input type="text" class="form-control-simple" id="phone" placeholder="Teléfono *" autocomplete="off"
+                    onkeyup="onlyNum(this)" maxlength="20" wire:model.defer="createForm.phone">
             </div>
             <div class="col-lg-4 col-md-4 col-12 form-group mt-lg-0 mt-md-3 mt-3">
-                <input type="email" class="form-control-simple" id="email" placeholder="Email *" autocomplete="off">
+                <input type="email" class="form-control-simple" id="email" placeholder="Email *" autocomplete="off"
+                    maxlength="255" wire:model.defer="createForm.email">
             </div>
         </div>
         <div class="row mt-4">
             <div class="col-lg-2 col-md-6 col-6">
-                <div class="dropdown pointer">
+                <div class="dropdown pointer wire:ignore">
                     <div id="dropdownMenuPersonas" type="button" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
                         <div class="dropdown-menu quantity-menu">
@@ -25,8 +28,9 @@
                                     </div>
                                     <div class="col-6">
                                         <div class="form-quality-adultos">
-                                            <input class="cart-plus-minus-box input-text qty text" name="qtyadultos"
-                                                value="1" readonly>
+                                            <input type="number" class="cart-plus-minus-box input-text qty text"
+                                                name="qtyadultos" value="1" id="qtyadultos" readonly
+                                                wire:model.defer="createForm.qtyadultos">
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -34,8 +38,9 @@
                                     </div>
                                     <div class="col-6">
                                         <div class="form-quality-ninos">
-                                            <input class="cart-plus-minus-box input-text qty text qtyninos"
-                                                name="qtyninos" id="qtyninos" value="0" readonly>
+                                            <input type="number"
+                                                class="cart-plus-minus-box input-text qty text qtyninos" name="qtyninos"
+                                                id="qtyninos" value="0" readonly wire:model.defer="createForm.qtyninos">
                                         </div>
                                     </div>
                                 </div>
@@ -64,7 +69,12 @@
                         </div>
                     </div>
                 </div>
-
+                @if ($errors->has('createForm.qtyadultos'))
+                    <span>{{ $errors->first('createForm.qtyadultos') }}</span>
+                @endif
+                @if ($errors->has('createForm.qtyninos'))
+                    <span>{{ $errors->first('createForm.qtyninos') }}</span>
+                @endif
             </div>
         </div>
         <div class="row">
@@ -79,11 +89,14 @@
                             d="M13.2399 18.45C13.4385 18.4512 13.633 18.3931 13.7985 18.2833C13.9641 18.1735 14.0931 18.0169 14.1693 17.8335C14.2455 17.6501 14.2653 17.4481 14.2262 17.2533C14.1871 17.0586 14.091 16.8799 13.9499 16.74L10.2399 13H28.1199C28.3851 13 28.6395 12.8947 28.827 12.7071C29.0146 12.5196 29.1199 12.2652 29.1199 12C29.1199 11.7348 29.0146 11.4804 28.827 11.2929C28.6395 11.1054 28.3851 11 28.1199 11H10.2399L13.9499 7.27002C14.0425 7.17678 14.1158 7.06622 14.1657 6.94464C14.2155 6.82307 14.2409 6.69287 14.2405 6.56148C14.24 6.43008 14.2137 6.30007 14.163 6.17885C14.1123 6.05764 14.0382 5.9476 13.9449 5.85502C13.8517 5.76243 13.7411 5.68912 13.6196 5.63927C13.498 5.58942 13.3678 5.564 13.2364 5.56446C12.971 5.5654 12.7169 5.67171 12.5299 5.86002L6.41992 12L12.5299 18.14C12.6217 18.2363 12.7318 18.3133 12.8537 18.3666C12.9756 18.4198 13.1069 18.4482 13.2399 18.45Z"
                             fill="black" />
                     </svg>
-                    <select id="ida_y_vuelta" onchange="tipoViaje()">
+                    <select id="ida_y_vuelta" onchange="tipoViaje()" wire:model.defer="createForm.ida_y_vuelta">
                         <option class="text-center" value="1">Ida y vuelta</option>
                         <option class="text-center" value="2">Solo ida</option>
                     </select>
                 </div>
+                @if ($errors->has('createForm.ida_y_vuelta'))
+                    <span>{{ $errors->first('createForm.ida_y_vuelta') }}</span>
+                @endif
             </div>
             <div class="col-lg-2 col-md-6 col-6 ocultar-pc">
                 <div class="input-field-2">
@@ -99,13 +112,16 @@
                             </clipPath>
                         </defs>
                     </svg>
-                    <select id="claseM">
+                    <select id="claseM" wire:model.defer="createForm.clase">
                         <option class="text-center" value="0">Clase</option>
-                        <option class="text-center" value="1">Turista</option>
-                        <option class="text-center" value="2">Business</option>
-                        <option class="text-center" value="2">Primera</option>
+                        <option class="text-center" value="Turista">Turista</option>
+                        <option class="text-center" value="Business">Business</option>
+                        <option class="text-center" value="Primera">Primera</option>
                     </select>
                 </div>
+                @if ($errors->has('createForm.clase'))
+                    <span>{{ $errors->first('createForm.clase') }}</span>
+                @endif
             </div>
             <div class="col-lg-3 col-md-6 col-6">
                 <div class="input-field">
@@ -117,8 +133,12 @@
                             d="M33.5612 6.35999L27.4362 4.99999C26.9211 4.88496 26.388 4.88526 25.873 5.00087C25.358 5.11647 24.8732 5.34467 24.4515 5.66999L5.95011 19.5L1.50706 19.3C1.25257 19.2911 1.00178 19.3646 0.790124 19.5103C0.578464 19.6559 0.41662 19.8662 0.327445 20.1115C0.238271 20.3568 0.22627 20.6248 0.293139 20.8775C0.360008 21.1302 0.502367 21.355 0.700115 21.52L5.0265 25.05C5.09773 25.1091 5.18251 25.1484 5.27272 25.1642C5.36294 25.1799 5.45558 25.1716 5.54178 25.14C6.7765 24.65 11.3751 22.14 16.8098 19.07L17.8987 30.58C17.908 30.6797 17.9435 30.7749 18.0015 30.8553C18.0594 30.9358 18.1377 30.9984 18.2277 31.0365C18.3178 31.0745 18.4162 31.0866 18.5124 31.0714C18.6086 31.0561 18.699 31.0142 18.7737 30.95L21.2043 28.87C21.3373 28.7552 21.4268 28.5959 21.4571 28.42L23.7612 15.13C27.6501 12.91 31.364 10.76 33.9793 9.23999C34.2507 9.08808 34.4701 8.85404 34.6079 8.56957C34.7457 8.28509 34.7951 7.96394 34.7494 7.64961C34.7038 7.33528 34.5653 7.04298 34.3528 6.8123C34.1403 6.58162 33.8639 6.42372 33.5612 6.35999Z"
                             fill="black" />
                     </svg>
-                    <input type="text" id="origen" placeholder="Origen" autocomplete="off">
+                    <input type="text" id="origen" placeholder="Origen" autocomplete="off" onkeyup="onlyLetrasNum(this)"
+                        maxlength="255" wire:model.defer="createForm.origen">
                 </div>
+                @if ($errors->has('createForm.origen'))
+                    <span>{{ $errors->first('createForm.origen') }}</span>
+                @endif
             </div>
             <div class="col-lg-3 col-md-6 col-6">
                 <div class="input-field">
@@ -130,8 +150,12 @@
                             d="M33.5612 6.35999L27.4362 4.99999C26.9211 4.88496 26.388 4.88526 25.873 5.00087C25.358 5.11647 24.8732 5.34467 24.4515 5.66999L5.95011 19.5L1.50706 19.3C1.25257 19.2911 1.00178 19.3646 0.790124 19.5103C0.578464 19.6559 0.41662 19.8662 0.327445 20.1115C0.238271 20.3568 0.22627 20.6248 0.293139 20.8775C0.360008 21.1302 0.502367 21.355 0.700115 21.52L5.0265 25.05C5.09773 25.1091 5.18251 25.1484 5.27272 25.1642C5.36294 25.1799 5.45558 25.1716 5.54178 25.14C6.7765 24.65 11.3751 22.14 16.8098 19.07L17.8987 30.58C17.908 30.6797 17.9435 30.7749 18.0015 30.8553C18.0594 30.9358 18.1377 30.9984 18.2277 31.0365C18.3178 31.0745 18.4162 31.0866 18.5124 31.0714C18.6086 31.0561 18.699 31.0142 18.7737 30.95L21.2043 28.87C21.3373 28.7552 21.4268 28.5959 21.4571 28.42L23.7612 15.13C27.6501 12.91 31.364 10.76 33.9793 9.23999C34.2507 9.08808 34.4701 8.85404 34.6079 8.56957C34.7457 8.28509 34.7951 7.96394 34.7494 7.64961C34.7038 7.33528 34.5653 7.04298 34.3528 6.8123C34.1403 6.58162 33.8639 6.42372 33.5612 6.35999Z"
                             fill="black" />
                     </svg>
-                    <input type="text" id="destino" placeholder="Destino" autocomplete="off">
+                    <input type="text" id="destino" placeholder="Destino" autocomplete="off" maxlength="255"
+                        onkeyup="onlyLetrasNum(this)" wire:model.defer="createForm.destino">
                 </div>
+                @if ($errors->has('createForm.destino'))
+                    <span>{{ $errors->first('createForm.destino') }}</span>
+                @endif
             </div>
             <div
                 class="col-lg-1 col-md-12 col-12 ocultar-md altura-linea-form d-flex align-items-center justify-content-center">
@@ -147,8 +171,12 @@
                             d="M27.2411 11.0833H18.9998C18.5799 11.0833 18.1772 11.2501 17.8803 11.5471C17.5833 11.844 17.4165 12.2467 17.4165 12.6667V23.75H6.33317V9.5H3.1665V31.6667H6.33317V26.9167H31.6665V31.6667H34.8332V18.6754C34.8311 16.6625 34.0305 14.7327 32.6072 13.3093C31.1838 11.886 29.254 11.0854 27.2411 11.0833ZM20.5832 23.75V14.25H27.2411C28.4144 14.2513 29.5393 14.7179 30.3689 15.5476C31.1986 16.3772 31.6652 17.5021 31.6665 18.6754V23.75H20.5832Z"
                             fill="black" />
                     </svg>
-                    <input type="text" id="hotel" placeholder="Hotel o zona" autocomplete="off">
+                    <input type="text" id="hotel" placeholder="Hotel o zona" autocomplete="off" maxlength="255"
+                        onkeyup="onlyLetrasNum(this)" wire:model.defer="createForm.hotel">
                 </div>
+                @if ($errors->has('createForm.hotel'))
+                    <span>{{ $errors->first('createForm.hotel') }}</span>
+                @endif
             </div>
 
             <div class="col-lg-2 col-md-6 col-6 ocultar-md">
@@ -165,13 +193,16 @@
                             </clipPath>
                         </defs>
                     </svg>
-                    <select id="clase">
+                    <select id="clase" wire:model.defer="createForm.clase">
                         <option class="text-center" value="0">Clase</option>
-                        <option class="text-center" value="1">Turista</option>
-                        <option class="text-center" value="2">Business</option>
-                        <option class="text-center" value="2">Primera</option>
+                        <option class="text-center" value="Turista">Turista</option>
+                        <option class="text-center" value="Business">Business</option>
+                        <option class="text-center" value="Primera">Primera</option>
                     </select>
                 </div>
+                @if ($errors->has('createForm.clase'))
+                    <span>{{ $errors->first('createForm.clase') }}</span>
+                @endif
             </div>
             <div class="col-lg-3 col-md-6 col-6">
                 <div class="input-field input-fecha-inicio">
@@ -187,8 +218,12 @@
                             stroke-linejoin="round" />
                     </svg>
 
-                    <input type="text" id="fecha_inicio" placeholder="mar, 29 sep" autocomplete="off" value="">
+                    <input type="text" id="fecha_inicio" placeholder="mar, 29 sep" autocomplete="off" value=""
+                        wire:model.defer="createForm.fecha_inicio">
                 </div>
+                @if ($errors->has('createForm.fecha_inicio'))
+                    <span>{{ $errors->first('createForm.fecha_inicio') }}</span>
+                @endif
             </div>
             <div class="col-lg-3 col-md-6 col-6">
                 <div class="input-field input-fecha-fin">
@@ -203,8 +238,12 @@
                         <path d="M2.4165 12.0834H26.5832" stroke="black" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>
-                    <input type="text" id="fecha_regreso" placeholder="mar, 29 sep" autocomplete="off">
+                    <input type="text" id="fecha_regreso" placeholder="mar, 29 sep" autocomplete="off"
+                        wire:model.defer="createForm.fecha_regreso">
                 </div>
+                @if ($errors->has('createForm.fecha_regreso'))
+                    <span>{{ $errors->first('createForm.fecha_regreso') }}</span>
+                @endif
             </div>
             <div class="col-lg-1 col-md-12 col-12  altura-linea-form d-flex align-items-center justify-content-center">
                 <p class="line-form"></p>
@@ -219,8 +258,12 @@
                             d="M27.2411 11.0833H18.9998C18.5799 11.0833 18.1772 11.2501 17.8803 11.5471C17.5833 11.844 17.4165 12.2467 17.4165 12.6667V23.75H6.33317V9.5H3.1665V31.6667H6.33317V26.9167H31.6665V31.6667H34.8332V18.6754C34.8311 16.6625 34.0305 14.7327 32.6072 13.3093C31.1838 11.886 29.254 11.0854 27.2411 11.0833ZM20.5832 23.75V14.25H27.2411C28.4144 14.2513 29.5393 14.7179 30.3689 15.5476C31.1986 16.3772 31.6652 17.5021 31.6665 18.6754V23.75H20.5832Z"
                             fill="black" />
                     </svg>
-                    <input type="text" id="hotelM" placeholder="Hotel o zona" autocomplete="off">
+                    <input type="text" id="hotelM" placeholder="Hotel o zona" autocomplete="off"
+                        wire:model.defer="createForm.hotel">
                 </div>
+                @if ($errors->has('createForm.hotel'))
+                    <span>{{ $errors->first('createForm.hotel') }}</span>
+                @endif
             </div>
             <div class="col-lg-3 col-md-6 col-6">
                 <div class="input-field">
@@ -239,11 +282,20 @@
                             stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
 
-                    <input type="text" id="money" placeholder="$250 - $750 US" autocomplete="off">
+                    <input type="text" id="price" placeholder="$250 - $750 US" autocomplete="off" maxlength="255"
+                        onkeyup="onlyLetrasNum(this)" wire:model.defer="createForm.price">
                 </div>
+                @if ($errors->has('createForm.price'))
+                    <span>{{ $errors->first('createForm.price') }}</span>
+                @endif
             </div>
             <div class="col-lg-2 col-md-6 col-12 mt-5">
-                <button class="btn w-100" type="submit">Enviar</button>
+                <button class="btn w-100" type="submit" wire:loading.attr="disabled"
+                    wire:loading.remove>Enviar</button>
+                <div wire:loading wire:loading.class="d-flex align-items-center justify-content-center">
+                    {{-- <x-loading /> --}}
+                    Validando...
+                </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12 mt-5 d-flex align-items-center">
                 <a><svg width="30" height="30" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">

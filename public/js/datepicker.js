@@ -46,7 +46,7 @@ $(function () {
 
     });
     $('input[id="fecha_inicio"]').on('apply.daterangepicker', function (ev, picker) {
-        $(this).val(picker.startDate.format('MM/DD/YYYY'));
+        $(this).val(picker.startDate.format('YYYY-MM-DD'));
     });
 
     $('input[id="fecha_inicio"]').on('cancel.daterangepicker', function (ev, picker) {
@@ -103,7 +103,7 @@ $(function () {
 
     });
     $('input[id="fecha_regreso"]').on('apply.daterangepicker', function (ev, picker) {
-        $(this).val(picker.startDate.format('MM/DD/YYYY'));
+        $(this).val(picker.startDate.format('YYYY-MM-DD'));
     });
 
     $('input[id="fecha_regreso"]').on('cancel.daterangepicker', function (ev, picker) {
