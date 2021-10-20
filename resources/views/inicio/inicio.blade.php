@@ -34,6 +34,9 @@
                             data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500"
                             data-splitin="chars" data-splitout="none" data-responsive_offset="on"
                             data-elementdelay="0.05">¡Tu viaje con Travelux será la vacación de tus sueños!
+
+                            <a href="#cotizador" class="btn js-target-scroll btn-slider ocultar-pc">Cotizar <i
+                                    class="icon-next"></i></a>
                         </div>
 
                         <!-- Layer 2 -->
@@ -52,7 +55,7 @@
 
                         <!-- Layer 3 -->
 
-                        <div class="tp-caption" data-x="['right','right','right','right']"
+                        <div class="tp-caption ocultar-md" data-x="['right','right','right','right']"
                             data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
                             data-voffset="['195','215']" data-width="none" data-height="none" data-whitespace="nowrap"
                             data-transform_idle="o:1;"
@@ -90,6 +93,8 @@
                             data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500"
                             data-splitin="chars" data-splitout="none" data-responsive_offset="on"
                             data-elementdelay="0.05">¡Tu viaje con Travelux será la vacación de tus sueños!
+                            <a href="#cotizador" class="btn js-target-scroll btn-slider ocultar-pc">Cotizar <i
+                                    class="icon-next"></i></a>
                         </div>
 
 
@@ -109,7 +114,7 @@
 
                         <!-- Layer 3 -->
 
-                        <div class="tp-caption tp-resizeme" data-x="['right','right','right','right']"
+                        <div class="tp-caption tp-resizeme ocultar-md" data-x="['right','right','right','right']"
                             data-hoffset="['0']" data-y="['middle','middle','middle','middle']"
                             data-voffset="['195','210']" data-width="none" data-height="none" data-whitespace="nowrap"
                             data-transform_idle="o:1;"
@@ -166,7 +171,7 @@
 
                         <!-- Layer 3 -->
 
-                        <div class="tp-caption tp-resizeme" data-x="['right','right','right','right']"
+                        {{-- <div class="tp-caption tp-resizeme" data-x="['right','right','right','right']"
                             data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
                             data-voffset="['195','215']" data-width="none" data-height="none" data-whitespace="nowrap"
                             data-transform_idle="o:1;"
@@ -177,7 +182,7 @@
                             data-mask_out="x:inherit;y:inherit;" data-start="1500" data-splitin="none"
                             data-splitout="none" data-responsive_offset="on" style="z-index: 8;"><a href="#cotizador"
                                 class="btn js-target-scroll">Cotizar <i class="icon-next"></i></a>
-                        </div>
+                        </div> --}}
                     </li>
                 </ul>
             </div>
