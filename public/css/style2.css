@@ -40,7 +40,17 @@ li > .overlay {
 .tp-parallax-wrap {
     z-index: 3 !important;
 }
-
+.slide-title {
+    padding: 50px 20px 0px 0px !important;
+}
+@media (max-width: 767px) {
+    .slide-title {
+        padding: 0px 30px 0px 0px !important;
+    }
+    .tp-caption {
+        padding: 0 30px 0 0px !important;
+    }
+}
 /* Form */
 .form-control-simple,
 textarea.form-control-simple {

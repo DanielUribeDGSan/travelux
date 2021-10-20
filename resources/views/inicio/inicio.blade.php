@@ -52,7 +52,7 @@
 
                         <!-- Layer 3 -->
 
-                        {{-- <div class="tp-caption" data-x="['right','right','right','right']"
+                        <div class="tp-caption" data-x="['right','right','right','right']"
                             data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
                             data-voffset="['195','215']" data-width="none" data-height="none" data-whitespace="nowrap"
                             data-transform_idle="o:1;"
@@ -62,8 +62,8 @@
                             data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
                             data-mask_out="x:inherit;y:inherit;" data-start="1500" data-splitin="none"
                             data-splitout="none" data-responsive_offset="on"><a href="#cotizador"
-                                class="btn">Look more <i class="icon-next"></i></a>
-                        </div> --}}
+                                class="btn js-target-scroll">Cotizar <i class="icon-next"></i></a>
+                        </div>
                     </li>
 
                     <!-- Slide 2 -->
@@ -109,7 +109,7 @@
 
                         <!-- Layer 3 -->
 
-                        {{-- <div class="tp-caption tp-resizeme" data-x="['right','right','right','right']"
+                        <div class="tp-caption tp-resizeme" data-x="['right','right','right','right']"
                             data-hoffset="['0']" data-y="['middle','middle','middle','middle']"
                             data-voffset="['195','210']" data-width="none" data-height="none" data-whitespace="nowrap"
                             data-transform_idle="o:1;"
@@ -118,9 +118,9 @@
                             data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeInOut;"
                             data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
                             data-mask_out="x:inherit;y:inherit;" data-start="1500" data-splitin="none"
-                            data-splitout="none" data-responsive_offset="on" style="z-index: 8;"><a href="#about"
-                                class="btn js-target-scroll">Look more <i class="icon-next"></i></a>
-                        </div> --}}
+                            data-splitout="none" data-responsive_offset="on" style="z-index: 8;"><a href="#cotizador"
+                                class="js-target-scroll btn">Cotizar <i class="icon-next"></i></a>
+                        </div>
                     </li>
 
                     <!-- Slide 3 -->
@@ -166,7 +166,7 @@
 
                         <!-- Layer 3 -->
 
-                        {{-- <div class="tp-caption tp-resizeme" data-x="['right','right','right','right']"
+                        <div class="tp-caption tp-resizeme" data-x="['right','right','right','right']"
                             data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
                             data-voffset="['195','215']" data-width="none" data-height="none" data-whitespace="nowrap"
                             data-transform_idle="o:1;"
@@ -175,9 +175,9 @@
                             data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeInOut;"
                             data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
                             data-mask_out="x:inherit;y:inherit;" data-start="1500" data-splitin="none"
-                            data-splitout="none" data-responsive_offset="on" style="z-index: 8;"><a href="#about"
-                                class="btn js-target-scroll">Look more <i class="icon-next"></i></a>
-                        </div> --}}
+                            data-splitout="none" data-responsive_offset="on" style="z-index: 8;"><a href="#cotizador"
+                                class="btn js-target-scroll">Cotizar <i class="icon-next"></i></a>
+                        </div>
                     </li>
                 </ul>
             </div>

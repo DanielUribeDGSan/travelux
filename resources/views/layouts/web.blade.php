@@ -26,10 +26,10 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/colors.css') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/style2.css') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/utilidades.css') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/base.css') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/colors.css?ver=1.0.1') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/style2.css?ver=1.0.1') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/utilidades.css?ver=1.0.1') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/base.css?ver=1.0.1') }}" rel="stylesheet" media="screen">
 
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
