@@ -192,10 +192,10 @@
     <!-- Title  -->
     <section class="section">
         <div class="container" id="cotizador">
-            <h1 class="text-center"><span class="text-primary fw-700">Cotiza tu hotel, tu vuelo</span> <span
+            {{-- <h1 class="text-center"><span class="text-primary fw-700">Cotiza tu hotel, tu vuelo</span> <span
                     class="text-secundary fw-700">tu viaje</span></h1>
             <p class="mt-3 text-center fw-200 plr-10p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor.</p>
+                Aenean commodo ligula eget dolor.</p> --}}
         </div>
     </section>
     <!-- EndTitle  -->
