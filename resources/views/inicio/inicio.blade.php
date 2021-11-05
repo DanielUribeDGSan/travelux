@@ -314,7 +314,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 ocultar-md">
-                    <img class="img-fluid" src="{{ asset('img/sectionNosotros/imagen1.png') }}" alt="travelux" />
+                    <img class="img-fluid" src="{{ asset('img/banners/banner3.png') }}" alt="travelux" />
                 </div>
             </div>
         </div>
@@ -385,7 +385,7 @@
             </div>
             <div class="row d-flex align-items-center justify-content-center mt-5">
                 <div class="col-lg-4 mt-lg-0 mt-md-3 mt-3">
-                    <a href="tel:55 000 000">
+                    <a href="tel:5627457110">
                         <p class="texto-lg-2r text-white text-center-md">
                             <svg width="35" height="35" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -393,11 +393,11 @@
                                     d="M17.5901 10.3999L11.9517 3.89155C11.3017 3.14155 10.1101 3.14489 9.35506 3.90155L4.7184 8.54655C3.3384 9.92822 2.94339 11.9799 3.74173 13.6249C8.51109 23.4998 16.4751 31.475 26.3434 36.2582C27.9867 37.0566 30.0367 36.6616 31.4167 35.2799L36.0967 30.5916C36.8551 29.8332 36.8567 28.6349 36.1001 27.9849L29.5667 22.3766C28.8834 21.7899 27.8217 21.8666 27.1367 22.5532L24.8634 24.8299C24.747 24.9519 24.5938 25.0323 24.4273 25.0588C24.2608 25.0853 24.0902 25.0564 23.9417 24.9766C20.2258 22.8367 17.1434 19.7503 15.0084 16.0316C14.9284 15.8828 14.8995 15.7119 14.926 15.5451C14.9525 15.3784 15.033 15.2249 15.1551 15.1082L17.4217 12.8399C18.1084 12.1499 18.1834 11.0832 17.5901 10.3982V10.3999Z"
                                     stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            55 000 000
+                            56-27-45-71-10
                         </p>
                     </a>
                 </div>
-                <div class="col-lg-4 mt-lg-0 mt-md-3 mt-3">
+                {{-- <div class="col-lg-4 mt-lg-0 mt-md-3 mt-3">
                     <a href="https://wa.me/5500000000?text=Me%20interesa%20un%20viaje%20a:%20" target="_blank">
                         <p class="texto-lg-2r text-white text-center-md">
                             <svg width="35" height="35" viewBox="0 0 47 47" fill="none"
@@ -423,7 +423,7 @@
                             info@travelux.com
                         </p>
                     </a>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

@@ -590,8 +590,8 @@ label.error {
     position: absolute;
     z-index: 3;
     color: #fff;
-    left: 50vmin;
-    top: 5.9vmin;
+    left: 43vmin;
+    top: 5.4vmin;
 }
 
 @media (max-width: 480px) {

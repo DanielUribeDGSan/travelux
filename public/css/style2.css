@@ -61,6 +61,11 @@ li > .overlay {
     }
 }
 /* Form */
+.close-form {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 .form-control-simple,
 textarea.form-control-simple {
     font-size: 1em;

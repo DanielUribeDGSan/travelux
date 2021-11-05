@@ -25,11 +25,11 @@
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/colors.css?ver=1.0.2') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/style2.css?ver=1.0.2') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/utilidades.css?ver=1.0.2') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/base.css?ver=1.0.2') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/style.css?ver=1.0.3') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/colors.css?ver=1.0.3') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/style2.css?ver=1.0.3') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/utilidades.css?ver=1.0.3') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/base.css?ver=1.0.3') }}" rel="stylesheet" media="screen">
 
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
@@ -82,7 +82,9 @@
                 <sup><span class="delimiter">/</span> 0<span class="total-count"></span></sup>
             </div>
         </div>
-        <div class="header-phone">55 000 000</div>
+        <div class="header-phone">
+            <a class="text-white mb-2" href="tel:5627457110">56-27-45-71-10</a>
+        </div>
         <div class="vertical-panel"></div>
         <div class="vertical-panel-content">
             <div class="vertical-panel-info">
@@ -90,10 +92,11 @@
                 <div class="line"></div>
             </div>
             <ul class="social-list">
-                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                {{-- <li><a href=""><i class="fab fa-instagram"></i></a></li>
                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-whatsapp"></i></a></li> --}}
+                <li><a href="https://www.facebook.com/traveluxmx/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </li>
             </ul>
         </div>
 
@@ -213,7 +216,8 @@
                         </div>
                         <div class="col-base col-lg-3 col-md-6 col-12 d-flex justify-content-center">
                             <div class="h-auto">
-                                <a href="tel:55000000" class="author-link">
+
+                                <a href="tel:5627457110" class="author-link">
                                     <p class="text-primary text-left">
                                         <svg width="30" height="30" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -222,10 +226,10 @@
                                                 stroke="#16253E" stroke-width="2" stroke-linecap="round"
                                                 stroke-linejoin="round" />
                                         </svg>
-                                        <small>55 000 000</small>
+                                        <small>56-27-45-71-10</small>
                                     </p>
                                 </a>
-                                <a href="https://wa.me/5500000000?text=Me%20interesa%20un%20viaje%20a:%20"
+                                {{-- <a href="https://wa.me/5500000000?text=Me%20interesa%20un%20viaje%20a:%20"
                                     target="_blank" class="author-link">
                                     <p class="text-primary text-left">
                                         <svg width="30" height="30" viewBox="0 0 47 47" fill="none"
@@ -236,8 +240,8 @@
                                         </svg>
                                         <small>55 000 000</small>
                                     </p>
-                                </a>
-                                <a href="mailto:info@travelux.com" class="author-link">
+                                </a> --}}
+                                {{-- <a href="mailto:info@travelux.com" class="author-link">
                                     <p class="text-primary text-left">
                                         <svg width="30" height="30" viewBox="0 0 41 41" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -247,7 +251,7 @@
                                         </svg>
                                         <small>info@travelux.com</small>
                                     </p>
-                                </a>
+                                </a> --}}
                             </div>
                         </div>
                         <div class="col-base col-lg-3 col-md-6 col-12 d-flex align-items-center justify-content-center">
