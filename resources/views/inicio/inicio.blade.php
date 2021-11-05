@@ -302,7 +302,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 ocultar-pc">
-                    <img class="img-fluid" src="{{ asset('img/sectionNosotros/imagen1.png') }}" alt="travelux" />
+                    <img class="img-fluid" src="{{ asset('img/banners/banner3.png') }}" alt="travelux" />
                 </div>
                 <div class="col-lg-6 d-flex align-items-center justify-content-center mt-lg-0 mt-md-4 mt-4">
                     <div class="plr-10p">
