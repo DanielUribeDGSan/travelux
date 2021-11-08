@@ -397,8 +397,8 @@
                         </p>
                     </a>
                 </div>
-                {{-- <div class="col-lg-4 mt-lg-0 mt-md-3 mt-3">
-                    <a href="https://wa.me/5500000000?text=Me%20interesa%20un%20viaje%20a:%20" target="_blank">
+                <div class="col-lg-4 mt-lg-0 mt-md-3 mt-3">
+                    <a href="https://wa.me/5627457110?text=Me%20interesa%20un%20viaje%20a:%20" target="_blank">
                         <p class="texto-lg-2r text-white text-center-md">
                             <svg width="35" height="35" viewBox="0 0 47 47" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -407,12 +407,13 @@
                                     fill="white" />
                             </svg>
 
-                            55 000 000
+                            56-27-45-71-10
+
                         </p>
                     </a>
                 </div>
                 <div class="col-lg-4 mt-lg-0 mt-md-3 mt-3">
-                    <a href="mailto:info@travelux.com">
+                    <a href="mailto:travelux2021@gmail.com">
                         <p class="texto-lg-2r text-white text-center-md">
                             <svg width="35" height="35" viewBox="0 0 41 41" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -420,10 +421,10 @@
                                     d="M34.1665 34.1666H6.83317C5.92701 34.1666 5.05797 33.8066 4.41722 33.1659C3.77647 32.5251 3.4165 31.6561 3.4165 30.7499V10.1013C3.45483 9.22114 3.83164 8.38981 4.46829 7.78087C5.10493 7.17192 5.95219 6.83242 6.83317 6.83325H34.1665C35.0727 6.83325 35.9417 7.19322 36.5825 7.83397C37.2232 8.47472 37.5832 9.34376 37.5832 10.2499V30.7499C37.5832 31.6561 37.2232 32.5251 36.5825 33.1659C35.9417 33.8066 35.0727 34.1666 34.1665 34.1666ZM6.83317 13.4411V30.7499H34.1665V13.4411L20.4998 22.5499L6.83317 13.4411ZM8.19984 10.2499L20.4998 18.4499L32.7998 10.2499H8.19984Z"
                                     fill="white" />
                             </svg>
-                            info@travelux.com
+                            travelux2021@gmail.com
                         </p>
                     </a>
-                </div> --}}
+                </div>
             </div>
         </div>
     </section>
