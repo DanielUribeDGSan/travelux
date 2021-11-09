@@ -12,7 +12,7 @@
 
                     <!-- Slide 1 -->
 
-                    <li data-transition="slotzoom-horizontal" data-slotamount="7" data-masterspeed="1000"
+                    <li data-transition="slideright" data-slotamount="7" data-masterspeed="1000"
                         data-fsmasterspeed="1000">
                         <div class="overlay">
                         </div>
@@ -57,7 +57,7 @@
                         </div>
                     </li>
 
-                    <li data-transition="slotzoom-horizontal" data-slotamount="7" data-masterspeed="1000"
+                    <li data-transition="slideright" data-slotamount="7" data-masterspeed="1000"
                         data-fsmasterspeed="1000">
                         <div class="overlay">
                         </div>
@@ -102,7 +102,7 @@
                         </div>
                     </li>
 
-                    <li data-transition="slotzoom-horizontal" data-slotamount="7" data-masterspeed="1000"
+                    <li data-transition="slideright" data-slotamount="7" data-masterspeed="1000"
                         data-fsmasterspeed="1000">
                         <div class="overlay">
                         </div>
@@ -147,7 +147,7 @@
                         </div>
                     </li>
 
-                    <li data-transition="slotzoom-horizontal" data-slotamount="7" data-masterspeed="1000"
+                    <li data-transition="slideright" data-slotamount="7" data-masterspeed="1000"
                         data-fsmasterspeed="1000">
                         <div class="overlay">
                         </div>
@@ -194,7 +194,7 @@
 
                     <!-- Slide 2 -->
 
-                    {{-- <li data-transition="slotzoom-horizontal" data-slotamount="7" data-easein="Power3.easeInOut"
+                    {{-- <li data-transition="slideright" data-slotamount="7" data-easein="Power3.easeInOut"
                         data-easeout="Power3.easeInOut" data-masterspeed="1000">
                         <div class="overlay">
                         </div>
@@ -383,7 +383,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row d-flex align-items-center justify-content-center mt-5">
+            {{-- <div class="row d-flex align-items-center justify-content-center mt-5">
                 <div class="col-lg-4 mt-lg-0 mt-md-3 mt-3">
                     <a href="tel:5627457110">
                         <p class="texto-lg-2r text-white text-center-md">
@@ -425,7 +425,7 @@
                         </p>
                     </a>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
     {{-- end Como lo hacemos --}}

@@ -290,33 +290,16 @@ const registrarForm = (e) => {
         });
         return false;
     }
-    else if (origen == '') {
+    else if (origen == '' && destino == '' && hotel == '') {
         Swal.fire({
             icon: 'error',
             title: 'Ups...',
-            html: 'El campo "<b>Origen</b>" no puede quedar vacío',
+            html: 'Debes ingresar un destino o un hotel, para poder cotizar',
             confirmButtonText: 'Aceptar',
         });
         return false;
     }
-    else if (destino == '') {
-        Swal.fire({
-            icon: 'error',
-            title: 'Ups...',
-            html: 'El campo "<b>Destino</b>" no puede quedar vacío',
-            confirmButtonText: 'Aceptar',
-        });
-        return false;
-    }
-    else if (hotel == '') {
-        Swal.fire({
-            icon: 'error',
-            title: 'Ups...',
-            html: 'El campo "<b>Hotel o zona</b>" no puede quedar vacío',
-            confirmButtonText: 'Aceptar',
-        });
-        return false;
-    }
+
     else if (screen.width >= 1000 && clase == '0') {
         Swal.fire({
             icon: 'error',

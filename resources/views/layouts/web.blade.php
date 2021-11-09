@@ -25,11 +25,11 @@
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link href="{{ asset('css/style.css?ver=1.0.3') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/colors.css?ver=1.0.3') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/style2.css?ver=1.0.3') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/utilidades.css?ver=1.0.3') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/base.css?ver=1.0.3') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/style.css?ver=1.0.4') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/colors.css?ver=1.0.4') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/style2.css?ver=1.0.4') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/utilidades.css?ver=1.0.4') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/base.css?ver=1.0.4') }}" rel="stylesheet" media="screen">
 
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
@@ -284,7 +284,7 @@
 
                                     </p>
                                 </a>
-                                <a href="mailto:travelux2021@gmail.com" class="author-link">
+                                <a href="mailto:contacto@travelux.com.mx" class="author-link">
                                     <p class="text-primary text-left">
                                         <svg width="30" height="30" viewBox="0 0 41 41" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -292,7 +292,7 @@
                                                 d="M34.1665 34.1668H6.83317C5.92701 34.1668 5.05797 33.8069 4.41722 33.1661C3.77647 32.5254 3.4165 31.6563 3.4165 30.7502V10.1015C3.45483 9.22139 3.83164 8.39006 4.46829 7.78111C5.10493 7.17216 5.95219 6.83266 6.83317 6.8335H34.1665C35.0727 6.8335 35.9417 7.19347 36.5825 7.83422C37.2232 8.47497 37.5832 9.34401 37.5832 10.2502V30.7502C37.5832 31.6563 37.2232 32.5254 36.5825 33.1661C35.9417 33.8069 35.0727 34.1668 34.1665 34.1668ZM6.83317 13.4413V30.7502H34.1665V13.4413L20.4998 22.5502L6.83317 13.4413ZM8.19984 10.2502L20.4998 18.4502L32.7998 10.2502H8.19984Z"
                                                 fill="#16253E" />
                                         </svg>
-                                        <small>travelux2021@gmail.com</small>
+                                        <small>contacto@travelux.com.mx</small>
                                     </p>
                                 </a>
                             </div>
@@ -391,8 +391,8 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <script src="{{ asset('js/datepicker.js') }}"></script>
-    <script src="{{ asset('js/form.js') }}"></script>
+    <script src="{{ asset('js/datepicker.js?ver=1.0.4') }}"></script>
+    <script src="{{ asset('js/form.js?ver=1.0.4') }}"></script>
 
     <script>
         $('.dropdown-menu').on('click', function(e) {
