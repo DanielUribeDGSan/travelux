@@ -266,7 +266,7 @@ const registrarForm = (e) => {
         Swal.fire({
             icon: 'error',
             title: 'Ups...',
-            html: 'El campo "<b>Adultos</b>" no puede quedar vacío',
+            html: 'El campo "<b>Personas</b>" no puede quedar vacío',
             confirmButtonText: 'Aceptar',
         });
         return false;

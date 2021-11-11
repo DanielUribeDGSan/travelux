@@ -15,7 +15,7 @@ class ValidarForm extends Component
         'name' => null,
         'phone' => null,
         'email' => null,
-        'qtyadultos' => 1,
+        'qtyadultos' => 0,
         'qtyninos' => 0,
         'ida_y_vuelta' => '1',
         'clase' => '0',

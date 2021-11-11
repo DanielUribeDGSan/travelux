@@ -30,7 +30,7 @@
                                     <div class="col-6">
                                         <div class="form-quality-adultos">
                                             <input type="number" class="cart-plus-minus-box input-text qty text"
-                                                name="qtyadultos" value="1" id="qtyadultos" readonly
+                                                name="qtyadultos" value="0" id="qtyadultos" readonly
                                                 wire:model.defer="createForm.qtyadultos">
                                         </div>
                                     </div>
