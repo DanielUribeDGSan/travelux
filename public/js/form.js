@@ -163,7 +163,6 @@ const registrarForm = (e) => {
     var boy_edad_8 = "";
 
 
-
     if (qtyninos == '1') {
         boy_edad_1 = document.querySelector('#ninos_1').value;
     }
@@ -346,6 +345,6 @@ const registrarForm = (e) => {
         return false;
     }
 
-    Livewire.emitTo('validar-form', 'registrarFormulario', `${fecha_inicio}`, `${fecha_regreso}`, `${boy_edad_1}`, `${boy_edad_2}`, `${boy_edad_3}`, `${boy_edad_4}`, `${boy_edad_5}`, `${boy_edad_6}`, `${boy_edad_7}`, `${boy_edad_8}`, `${qtyadultos}`, `${qtyninos}`);
+    Livewire.emitTo('validar-form', 'registrarFormulario', `${fecha_inicio}`, `${fecha_regreso}`, `${boy_edad_1}`, `${boy_edad_2}`, `${boy_edad_3}`, `${boy_edad_4}`, `${boy_edad_5}`, `${boy_edad_6}`, `${boy_edad_7}`, `${boy_edad_8}`, `${qtyadultos}`, `${qtyninos}`, `${origen}`, `${destino}`);
 
 }

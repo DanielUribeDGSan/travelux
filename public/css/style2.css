@@ -238,6 +238,13 @@ textarea.form-control-simple {
     max-height: 226px;
     left: -48px;
 }
+@media (max-width: 767px) {
+    .autoComplete_wrapper > ul {
+        width: 45vw;
+        max-height: 226px;
+        left: -37px;
+    }
+}
 .autoComplete_wrapper > input {
     padding: 0rem !important;
 }

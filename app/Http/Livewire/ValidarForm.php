@@ -60,8 +60,10 @@ class ValidarForm extends Component
         'createForm.price' => 'Precio',
     ];
 
-    public function registrarFormulario($fechaInicio, $fechaRegreso, $edadBoy1, $edadBoy2, $edadBoy3, $edadBoy4, $edadBoy5, $edadBoy6, $edadBoy7, $edadBoy8, $adultos, $ninos)
+    public function registrarFormulario($fechaInicio, $fechaRegreso, $edadBoy1, $edadBoy2, $edadBoy3, $edadBoy4, $edadBoy5, $edadBoy6, $edadBoy7, $edadBoy8, $adultos, $ninos, $origen, $destino)
     {
+
+
         $boys = $ninos;
         $adults = $adultos;
         $this->createForm['qtyadultos'] = $adults;
@@ -89,6 +91,9 @@ class ValidarForm extends Component
         $this->createForm['ninos_6'] = $edadB6;
         $this->createForm['ninos_7'] = $edadB7;
         $this->createForm['ninos_8'] = $edadB8;
+
+        $this->createForm['origen'] = $origen;
+        $this->createForm['destino'] = $destino;
 
         $this->validate();
 
