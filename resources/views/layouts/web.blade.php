@@ -25,11 +25,17 @@
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.6/dist/css/autoComplete.min.css">
+
     <link href="{{ asset('css/style.css?ver=1.0.4') }}" rel="stylesheet" media="screen">
     <link href="{{ asset('css/colors.css?ver=1.0.4') }}" rel="stylesheet" media="screen">
     <link href="{{ asset('css/style2.css?ver=1.0.4') }}" rel="stylesheet" media="screen">
     <link href="{{ asset('css/utilidades.css?ver=1.0.4') }}" rel="stylesheet" media="screen">
     <link href="{{ asset('css/base.css?ver=1.0.4') }}" rel="stylesheet" media="screen">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.6/dist/autoComplete.min.js"></script>
 
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
@@ -391,8 +397,11 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
     <script src="{{ asset('js/datepicker.js?ver=1.0.4') }}"></script>
     <script src="{{ asset('js/form.js?ver=1.0.4') }}"></script>
+    <script src="{{ asset('js/origen.js?ver=1.0.4') }}"></script>
 
     <script>
         $('.dropdown-menu').on('click', function(e) {

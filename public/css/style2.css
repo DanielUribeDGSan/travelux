@@ -141,6 +141,7 @@ textarea.form-control-simple {
     appearance: none;
     width: 100%;
     height: 100%;
+    text-transform: lowercase;
 }
 .input-field {
     width: 100%;
@@ -154,6 +155,7 @@ textarea.form-control-simple {
     position: relative;
     align-items: center;
     justify-content: center;
+    text-transform: lowercase;
 }
 .input-field-2 {
     width: 100%;
@@ -167,6 +169,7 @@ textarea.form-control-simple {
     position: relative;
     align-items: center;
     justify-content: center;
+    text-transform: lowercase;
 }
 .input-field-2 select {
     background: none;
@@ -185,6 +188,58 @@ textarea.form-control-simple {
     color: var(--primary);
     font-weight: 200;
     text-align: center;
+}
+.autoComplete_wrapper {
+    height: 3.4rem;
+}
+.autoComplete_wrapper > input::selection {
+    color: var(--text-color) !important;
+    border: 0px;
+}
+.autoComplete_wrapper > input:focus {
+    color: var(--text-color) !important;
+    border: 0px;
+}
+.autoComplete_wrapper > input:hover {
+    color: var(--text-color) !important;
+    border: 0px;
+}
+.autoComplete_wrapper > input::placeholder {
+    color: var(--text-color) !important;
+}
+.no_result {
+    display: none !important;
+}
+.autoComplete_wrapper > ul > li mark {
+    background-color: transparent;
+    color: var(--text-color) !important;
+    font-weight: 700;
+}
+.autoComplete_wrapper > ul > li {
+    margin: 0.3rem;
+    padding: 0.3rem 0.5rem;
+    text-align: left;
+    font-size: 0.8rem;
+    color: #212121;
+    border-radius: 0.35rem;
+    background-color: #fff;
+    white-space: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.2s ease;
+}
+
+.autoComplete_wrapper > ul > li:hover {
+    cursor: pointer;
+    background-color: #081e5c26;
+}
+.autoComplete_wrapper > ul {
+    width: 27vw;
+    max-height: 226px;
+    left: -48px;
+}
+.autoComplete_wrapper > input {
+    padding: 0rem !important;
 }
 .line-form {
     height: 100%;

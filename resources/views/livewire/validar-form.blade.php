@@ -125,7 +125,7 @@
                 @endif
             </div>
             <div class="col-lg-3 col-md-6 col-6">
-                <div class="input-field">
+                <div class="input-field autoComplete_wrapper">
                     <svg width="20" height="22" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M6.07631 11.5L11.6666 13.16L17.811 8.57001L8.99297 8.83001C8.90664 8.83486 8.82295 8.8624 8.74992 8.91001L5.95964 10.56C5.87284 10.6095 5.80247 10.6846 5.75763 10.7756C5.71278 10.8667 5.69553 10.9695 5.70809 11.0707C5.72066 11.1719 5.76247 11.267 5.82811 11.3435C5.89375 11.42 5.98021 11.4746 6.07631 11.5Z"
@@ -134,8 +134,11 @@
                             d="M33.5612 6.35999L27.4362 4.99999C26.9211 4.88496 26.388 4.88526 25.873 5.00087C25.358 5.11647 24.8732 5.34467 24.4515 5.66999L5.95011 19.5L1.50706 19.3C1.25257 19.2911 1.00178 19.3646 0.790124 19.5103C0.578464 19.6559 0.41662 19.8662 0.327445 20.1115C0.238271 20.3568 0.22627 20.6248 0.293139 20.8775C0.360008 21.1302 0.502367 21.355 0.700115 21.52L5.0265 25.05C5.09773 25.1091 5.18251 25.1484 5.27272 25.1642C5.36294 25.1799 5.45558 25.1716 5.54178 25.14C6.7765 24.65 11.3751 22.14 16.8098 19.07L17.8987 30.58C17.908 30.6797 17.9435 30.7749 18.0015 30.8553C18.0594 30.9358 18.1377 30.9984 18.2277 31.0365C18.3178 31.0745 18.4162 31.0866 18.5124 31.0714C18.6086 31.0561 18.699 31.0142 18.7737 30.95L21.2043 28.87C21.3373 28.7552 21.4268 28.5959 21.4571 28.42L23.7612 15.13C27.6501 12.91 31.364 10.76 33.9793 9.23999C34.2507 9.08808 34.4701 8.85404 34.6079 8.56957C34.7457 8.28509 34.7951 7.96394 34.7494 7.64961C34.7038 7.33528 34.5653 7.04298 34.3528 6.8123C34.1403 6.58162 33.8639 6.42372 33.5612 6.35999Z"
                             fill="black" />
                     </svg>
-                    <input type="text" id="origen" placeholder="Origen" autocomplete="off" onkeyup="onlyLetrasNum(this)"
-                        maxlength="255" wire:model.defer="createForm.origen">
+
+                    <input type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off"
+                        autocapitalize="off" id="origen" placeholder="Origen" autocomplete="off"
+                        onkeyup="onlyLetrasNum(this)" maxlength="255" wire:model.defer="createForm.origen">
+
                 </div>
                 @if ($errors->has('createForm.origen'))
                     <span>{{ $errors->first('createForm.origen') }}</span>
@@ -794,4 +797,42 @@
 
         }
     </script>
+    @push('script')
+        <script>
+            const autoCompleteJS = new autoComplete({
+                selector: "#origen",
+                placeHolder: "Origen",
+                data: {
+                    src: ["Sauce - Thousand Island", "Wild Boar - Tenderloin", "Goat - Whole Cut"],
+                    cache: true,
+                },
+                resultsList: {
+                    element: (list, data) => {
+                        if (!data.results.length) {
+                            // Create "No Results" message element
+                            const message = document.createElement("div");
+                            // Add class to the created element
+                            message.setAttribute("class", "no_result");
+                            // Add message text content
+                            message.innerHTML = `<span>Found No Results for "${data.query}"</span>`;
+                            // Append message element to the results list
+                            list.prepend(message);
+                        }
+                    },
+                    noResults: true,
+                },
+                resultItem: {
+                    highlight: true
+                },
+                events: {
+                    input: {
+                        selection: (event) => {
+                            const selection = event.detail.selection.value;
+                            autoCompleteJS.input.value = selection;
+                        }
+                    }
+                }
+            });
+        </script>
+    @endpush
 </div>
