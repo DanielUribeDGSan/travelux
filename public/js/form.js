@@ -280,7 +280,7 @@ const registrarForm = (e) => {
         });
         return false;
     }
-    else if (screen.width < 1000 && claseM == '0') {
+    else if (screen.width < 1000 && claseM == '0' && origen != '' && destino != '') {
         Swal.fire({
             icon: 'error',
             title: 'Ups...',
@@ -289,7 +289,7 @@ const registrarForm = (e) => {
         });
         return false;
     }
-    else if (origen == '' && destino == '' && hotel == '') {
+    else if (screen.width >= 1000 && origen == '' && destino == '' && hotel == '') {
         Swal.fire({
             icon: 'error',
             title: 'Ups...',
@@ -298,8 +298,27 @@ const registrarForm = (e) => {
         });
         return false;
     }
+    else if (origen == '' && destino != '') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Origen</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
 
-    else if (screen.width >= 1000 && clase == '0') {
+    else if (origen != '' && destino == '') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Destino</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+
+    else if (screen.width >= 1000 && clase == '0' && origen != '' && destino != '') {
         Swal.fire({
             icon: 'error',
             title: 'Ups...',
@@ -308,7 +327,7 @@ const registrarForm = (e) => {
         });
         return false;
     }
-    else if (fecha_inicio == '') {
+    else if (fecha_inicio == '' && origen != '' && destino != '') {
         Swal.fire({
             icon: 'error',
             title: 'Ups...',
@@ -317,7 +336,7 @@ const registrarForm = (e) => {
         });
         return false;
     }
-    else if (fecha_regreso == '' && ida_y_vuelta == '1') {
+    else if (fecha_regreso == '' && ida_y_vuelta == '1' && origen != '' && destino != '') {
         Swal.fire({
             icon: 'error',
             title: 'Ups...',
@@ -326,20 +345,29 @@ const registrarForm = (e) => {
         });
         return false;
     }
-    else if (screen.width < 1000 && hotelM == '') {
+    else if (screen.width < 1000 && hotelM == '' && origen == '' && destino == '') {
         Swal.fire({
             icon: 'error',
             title: 'Ups...',
-            html: 'El campo "<b>Hotel o zona</b>" no puede quedar vacío',
+            html: 'Debes ingresar un destino o un hotel, para poder cotizar',
             confirmButtonText: 'Aceptar',
         });
         return false;
     }
-    else if (price == '') {
+    else if (screen.width >= 1000 && price == '' && hotel != '') {
         Swal.fire({
             icon: 'error',
             title: 'Ups...',
-            html: 'El campo "<b>Precio</b>" no puede quedar vacío',
+            html: 'El campo "<b>Rangos de precios</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+    else if (screen.width < 1000 && price == '' && hotelM != '') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Rangos de precios</b>" no puede quedar vacío',
             confirmButtonText: 'Aceptar',
         });
         return false;

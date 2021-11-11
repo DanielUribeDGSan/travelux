@@ -306,10 +306,8 @@
                 </div>
                 <div class="col-lg-6 d-flex align-items-center justify-content-center mt-lg-0 mt-md-4 mt-4">
                     <div class="plr-10p">
-                        <p class="texto-lg-3r text-center-md">¡Tu viaje con
-                            <span class="text-secundary">Travelux</span> será
-                            la vacación de
-                            tus sueños!
+                        <p class="texto-lg-3r text-center-md">
+                            Lujo y confort a un <span class="text-secundary">buen precio</span>
                         </p>
                     </div>
                 </div>
