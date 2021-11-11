@@ -28,21 +28,6 @@ class ValidarForm extends Component
 
     ];
 
-    protected $rules = [
-        'createForm.name' => 'required|max:255',
-        'createForm.phone' => 'required|max:20',
-        'createForm.email' => 'required|max:255',
-        'createForm.qtyadultos' => 'required|max:4',
-        'createForm.qtyninos' => 'required|max:4',
-        'createForm.ida_y_vuelta' => 'required|max:255',
-        'createForm.clase' => 'required|max:255',
-        'createForm.origen' => 'required|max:255',
-        'createForm.destino' => 'required|max:255',
-        'createForm.hotel' => 'required|max:255',
-        'createForm.fecha_inicio' => 'required|max:255',
-        'createForm.fecha_regreso' => 'max:255',
-        'createForm.price' => 'required|max:255',
-    ];
 
     protected $validationAttributes = [
         'createForm.name' => 'Nombre',
@@ -62,7 +47,6 @@ class ValidarForm extends Component
 
     public function registrarFormulario($fechaInicio, $fechaRegreso, $edadBoy1, $edadBoy2, $edadBoy3, $edadBoy4, $edadBoy5, $edadBoy6, $edadBoy7, $edadBoy8, $adultos, $ninos, $origen, $destino)
     {
-
 
         $boys = $ninos;
         $adults = $adultos;
@@ -94,8 +78,6 @@ class ValidarForm extends Component
 
         $this->createForm['origen'] = $origen;
         $this->createForm['destino'] = $destino;
-
-        $this->validate();
 
         if ($this->createForm['qtyninos'] == '1') {
             $this->years_boys = '{"edad_1":{"edad":' . $this->createForm["ninos_1"] . '}}';
