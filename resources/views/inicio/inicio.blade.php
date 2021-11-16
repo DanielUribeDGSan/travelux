@@ -283,12 +283,12 @@
                 <div class="col-lg-6 position-relative">
                     <p class="bg-texto">nosotros</p>
                     <div class="content-text-nosotros">
-                        <p class="text-section-nosotros">Somos una agencia de viajes
+                        <p class="text-section-nosotros monserrat">Somos una agencia de viajes
                             boutique con más de: </p>
                         <h2 class="text-secundary mt-3">10 años</h2>
-                        <p class="text-section-nosotros mt-3">de experiencia en el sector.</p>
+                        <p class="text-section-nosotros monserrat mt-3">de experiencia en el sector.</p>
                         <p class="mt-3">Somos los mejores en conseguir tanto hoteles como vuelos de <span
-                                class="text-section-nosotros">lujo a un precio
+                                class="text-section-nosotros monserrat">lujo a un precio
                                 inmejorable.</span></p>
                     </div>
                 </div>

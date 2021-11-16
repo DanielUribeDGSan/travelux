@@ -37,7 +37,9 @@
 .text-secundary {
     color: var(--secundary) !important;
 }
-
+.monserrat {
+    font-family: "Montserrat" !important;
+}
 .bg-image {
     background-size: cover;
     background-position: center;

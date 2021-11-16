@@ -470,3 +470,6 @@ textarea.form-control-simple {
     border-radius: 0.125em;
     background-color: var(--secundary);
 }
+.slide-number {
+    display: none;
+}
