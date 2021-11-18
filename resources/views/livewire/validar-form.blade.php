@@ -286,11 +286,11 @@
                     </svg>
                     <select id="price" wire:model.defer="createForm.price">
                         <option class="text-center" value="">Rangos de precios</option>
-                        <option class="text-center" value="300-400">300-400</option>
-                        <option class="text-center" value="400-500">400-500</option>
-                        <option class="text-center" value="500-750">500-750</option>
-                        <option class="text-center" value="750-1000">750-1000</option>
-                        <option class="text-center" value="1000+">1000+</option>
+                        <option class="text-center" value="300-400 MXN">300-400 MXN</option>
+                        <option class="text-center" value="400-500 MXN">400-500 MXN</option>
+                        <option class="text-center" value="500-750 MXN">500-750 MXN</option>
+                        <option class="text-center" value="750-1000 MXN">750-1000 MXN</option>
+                        <option class="text-center" value="1000+ MXN">1000+ MXN</option>
                     </select>
                 </div>
                 @if ($errors->has('createForm.price'))
@@ -508,11 +508,11 @@
                     </svg>
                     <select id="price2" wire:model.defer="createForm2.price">
                         <option class="text-center" value="">Rangos de precios</option>
-                        <option class="text-center" value="300-400">300-400</option>
-                        <option class="text-center" value="400-500">400-500</option>
-                        <option class="text-center" value="500-750">500-750</option>
-                        <option class="text-center" value="750-1000">750-1000</option>
-                        <option class="text-center" value="1000+">1000+</option>
+                        <option class="text-center" value="300-400 MXN">300-400 MXN</option>
+                        <option class="text-center" value="400-500 MXN">400-500 MXN</option>
+                        <option class="text-center" value="500-750 MXN">500-750 MXN</option>
+                        <option class="text-center" value="750-1000 MXN">750-1000 MXN</option>
+                        <option class="text-center" value="1000+ MXN">1000+ MXN</option>
                     </select>
                 </div>
                 @if ($errors->has('createForm2.price'))
@@ -730,11 +730,11 @@
                     </svg>
                     <select id="price3" wire:model.defer="createForm3.price">
                         <option class="text-center" value="">Rangos de precios</option>
-                        <option class="text-center" value="300-400">300-400</option>
-                        <option class="text-center" value="400-500">400-500</option>
-                        <option class="text-center" value="500-750">500-750</option>
-                        <option class="text-center" value="750-1000">750-1000</option>
-                        <option class="text-center" value="1000+">1000+</option>
+                        <option class="text-center" value="300-400 MXN">300-400 MXN</option>
+                        <option class="text-center" value="400-500 MXN">400-500 MXN</option>
+                        <option class="text-center" value="500-750 MXN">500-750 MXN</option>
+                        <option class="text-center" value="750-1000 MXN">750-1000 MXN</option>
+                        <option class="text-center" value="1000+ MXN">1000+ MXN</option>
                     </select>
                 </div>
                 @if ($errors->has('createForm3.price'))
