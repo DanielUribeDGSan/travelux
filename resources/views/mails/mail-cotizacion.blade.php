@@ -608,166 +608,176 @@
                                             </table>
                                         </td>
                                     </tr>
-                                    <tr style="border-collapse:collapse">
-                                        <td align="left"
-                                            style="Margin:0;padding-top:15px;padding-bottom:30px;padding-left:30px;padding-right:30px">
-                                            <table width="100%" cellspacing="0" cellpadding="0"
-                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                <tr style="border-collapse:collapse">
-                                                    <td valign="top" align="center"
-                                                        style="padding:0;Margin:0;width:540px">
-                                                        <table width="100%" cellspacing="0" cellpadding="0"
-                                                            role="presentation"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                            <tr style="border-collapse:collapse">
-                                                                <td align="left" style="padding:0;Margin:0">
-                                                                    <h3
-                                                                        style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;font-size:20px;font-style:normal;font-weight:normal;color:#666666">
-                                                                        Origen</h3>
-                                                                </td>
-                                                            </tr>
-                                                            <tr style="border-collapse:collapse">
-                                                                <td align="left"
-                                                                    style="padding:0;Margin:0;padding-bottom:10px;padding-top:15px">
-                                                                    <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;line-height:27px;color:#999999;font-size:18px">
-                                                                        {{ $travel->origin }}</p>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr style="border-collapse:collapse">
-                                        <td align="left"
-                                            style="Margin:0;padding-top:15px;padding-bottom:30px;padding-left:30px;padding-right:30px">
-                                            <table width="100%" cellspacing="0" cellpadding="0"
-                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                <tr style="border-collapse:collapse">
-                                                    <td valign="top" align="center"
-                                                        style="padding:0;Margin:0;width:540px">
-                                                        <table width="100%" cellspacing="0" cellpadding="0"
-                                                            role="presentation"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                            <tr style="border-collapse:collapse">
-                                                                <td align="left" style="padding:0;Margin:0">
-                                                                    <h3
-                                                                        style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;font-size:20px;font-style:normal;font-weight:normal;color:#666666">
-                                                                        Destino</h3>
-                                                                </td>
-                                                            </tr>
-                                                            <tr style="border-collapse:collapse">
-                                                                <td align="left"
-                                                                    style="padding:0;Margin:0;padding-bottom:10px;padding-top:15px">
-                                                                    <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;line-height:27px;color:#999999;font-size:18px">
-                                                                        {{ $travel->destination }}</p>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr style="border-collapse:collapse">
-                                        <td align="left"
-                                            style="Margin:0;padding-top:15px;padding-bottom:30px;padding-left:30px;padding-right:30px">
-                                            <table width="100%" cellspacing="0" cellpadding="0"
-                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                <tr style="border-collapse:collapse">
-                                                    <td valign="top" align="center"
-                                                        style="padding:0;Margin:0;width:540px">
-                                                        <table width="100%" cellspacing="0" cellpadding="0"
-                                                            role="presentation"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                            <tr style="border-collapse:collapse">
-                                                                <td align="left" style="padding:0;Margin:0">
-                                                                    <h3
-                                                                        style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;font-size:20px;font-style:normal;font-weight:normal;color:#666666">
-                                                                        Hotel o zona</h3>
-                                                                </td>
-                                                            </tr>
-                                                            <tr style="border-collapse:collapse">
-                                                                <td align="left"
-                                                                    style="padding:0;Margin:0;padding-bottom:10px;padding-top:15px">
-                                                                    <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;line-height:27px;color:#999999;font-size:18px">
-                                                                        {{ $travel->hotel }}</p>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr style="border-collapse:collapse">
-                                        <td align="left"
-                                            style="Margin:0;padding-top:15px;padding-bottom:30px;padding-left:30px;padding-right:30px">
-                                            <table width="100%" cellspacing="0" cellpadding="0"
-                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                <tr style="border-collapse:collapse">
-                                                    <td valign="top" align="center"
-                                                        style="padding:0;Margin:0;width:540px">
-                                                        <table width="100%" cellspacing="0" cellpadding="0"
-                                                            role="presentation"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                            <tr style="border-collapse:collapse">
-                                                                <td align="left" style="padding:0;Margin:0">
-                                                                    <h3
-                                                                        style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;font-size:20px;font-style:normal;font-weight:normal;color:#666666">
-                                                                        Clase</h3>
-                                                                </td>
-                                                            </tr>
-                                                            <tr style="border-collapse:collapse">
-                                                                <td align="left"
-                                                                    style="padding:0;Margin:0;padding-bottom:10px;padding-top:15px">
-                                                                    <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;line-height:27px;color:#999999;font-size:18px">
-                                                                        {{ $travel->class }}</p>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr style="border-collapse:collapse">
-                                        <td align="left"
-                                            style="Margin:0;padding-top:15px;padding-bottom:30px;padding-left:30px;padding-right:30px">
-                                            <table width="100%" cellspacing="0" cellpadding="0"
-                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                <tr style="border-collapse:collapse">
-                                                    <td valign="top" align="center"
-                                                        style="padding:0;Margin:0;width:540px">
-                                                        <table width="100%" cellspacing="0" cellpadding="0"
-                                                            role="presentation"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                            <tr style="border-collapse:collapse">
-                                                                <td align="left" style="padding:0;Margin:0">
-                                                                    <h3
-                                                                        style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;font-size:20px;font-style:normal;font-weight:normal;color:#666666">
-                                                                        Fecha de ida</h3>
-                                                                </td>
-                                                            </tr>
-                                                            <tr style="border-collapse:collapse">
-                                                                <td align="left"
-                                                                    style="padding:0;Margin:0;padding-bottom:10px;padding-top:15px">
-                                                                    <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;line-height:27px;color:#999999;font-size:18px">
-                                                                        {{ $travel->start_date }}</p>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
+                                    @if ($travel->origin)
+                                        <tr style="border-collapse:collapse">
+                                            <td align="left"
+                                                style="Margin:0;padding-top:15px;padding-bottom:30px;padding-left:30px;padding-right:30px">
+                                                <table width="100%" cellspacing="0" cellpadding="0"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                    <tr style="border-collapse:collapse">
+                                                        <td valign="top" align="center"
+                                                            style="padding:0;Margin:0;width:540px">
+                                                            <table width="100%" cellspacing="0" cellpadding="0"
+                                                                role="presentation"
+                                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                                <tr style="border-collapse:collapse">
+                                                                    <td align="left" style="padding:0;Margin:0">
+                                                                        <h3
+                                                                            style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;font-size:20px;font-style:normal;font-weight:normal;color:#666666">
+                                                                            Origen</h3>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="border-collapse:collapse">
+                                                                    <td align="left"
+                                                                        style="padding:0;Margin:0;padding-bottom:10px;padding-top:15px">
+                                                                        <p
+                                                                            style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;line-height:27px;color:#999999;font-size:18px">
+                                                                            {{ $travel->origin }}</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    @endif
+                                    @if ($travel->destination)
+                                        <tr style="border-collapse:collapse">
+                                            <td align="left"
+                                                style="Margin:0;padding-top:15px;padding-bottom:30px;padding-left:30px;padding-right:30px">
+                                                <table width="100%" cellspacing="0" cellpadding="0"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                    <tr style="border-collapse:collapse">
+                                                        <td valign="top" align="center"
+                                                            style="padding:0;Margin:0;width:540px">
+                                                            <table width="100%" cellspacing="0" cellpadding="0"
+                                                                role="presentation"
+                                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                                <tr style="border-collapse:collapse">
+                                                                    <td align="left" style="padding:0;Margin:0">
+                                                                        <h3
+                                                                            style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;font-size:20px;font-style:normal;font-weight:normal;color:#666666">
+                                                                            Destino</h3>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="border-collapse:collapse">
+                                                                    <td align="left"
+                                                                        style="padding:0;Margin:0;padding-bottom:10px;padding-top:15px">
+                                                                        <p
+                                                                            style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;line-height:27px;color:#999999;font-size:18px">
+                                                                            {{ $travel->destination }}</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    @endif
+                                    @if ($travel->hotel)
+                                        <tr style="border-collapse:collapse">
+                                            <td align="left"
+                                                style="Margin:0;padding-top:15px;padding-bottom:30px;padding-left:30px;padding-right:30px">
+                                                <table width="100%" cellspacing="0" cellpadding="0"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                    <tr style="border-collapse:collapse">
+                                                        <td valign="top" align="center"
+                                                            style="padding:0;Margin:0;width:540px">
+                                                            <table width="100%" cellspacing="0" cellpadding="0"
+                                                                role="presentation"
+                                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                                <tr style="border-collapse:collapse">
+                                                                    <td align="left" style="padding:0;Margin:0">
+                                                                        <h3
+                                                                            style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;font-size:20px;font-style:normal;font-weight:normal;color:#666666">
+                                                                            Hotel o zona</h3>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="border-collapse:collapse">
+                                                                    <td align="left"
+                                                                        style="padding:0;Margin:0;padding-bottom:10px;padding-top:15px">
+                                                                        <p
+                                                                            style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;line-height:27px;color:#999999;font-size:18px">
+                                                                            {{ $travel->hotel }}</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    @endif
+                                    @if ($travel->class)
+                                        <tr style="border-collapse:collapse">
+                                            <td align="left"
+                                                style="Margin:0;padding-top:15px;padding-bottom:30px;padding-left:30px;padding-right:30px">
+                                                <table width="100%" cellspacing="0" cellpadding="0"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                    <tr style="border-collapse:collapse">
+                                                        <td valign="top" align="center"
+                                                            style="padding:0;Margin:0;width:540px">
+                                                            <table width="100%" cellspacing="0" cellpadding="0"
+                                                                role="presentation"
+                                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                                <tr style="border-collapse:collapse">
+                                                                    <td align="left" style="padding:0;Margin:0">
+                                                                        <h3
+                                                                            style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;font-size:20px;font-style:normal;font-weight:normal;color:#666666">
+                                                                            Clase</h3>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="border-collapse:collapse">
+                                                                    <td align="left"
+                                                                        style="padding:0;Margin:0;padding-bottom:10px;padding-top:15px">
+                                                                        <p
+                                                                            style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;line-height:27px;color:#999999;font-size:18px">
+                                                                            {{ $travel->class }}</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    @endif
+                                    @if ($travel->start_date)
+                                        <tr style="border-collapse:collapse">
+                                            <td align="left"
+                                                style="Margin:0;padding-top:15px;padding-bottom:30px;padding-left:30px;padding-right:30px">
+                                                <table width="100%" cellspacing="0" cellpadding="0"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                    <tr style="border-collapse:collapse">
+                                                        <td valign="top" align="center"
+                                                            style="padding:0;Margin:0;width:540px">
+                                                            <table width="100%" cellspacing="0" cellpadding="0"
+                                                                role="presentation"
+                                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                                <tr style="border-collapse:collapse">
+                                                                    <td align="left" style="padding:0;Margin:0">
+                                                                        <h3
+                                                                            style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;font-size:20px;font-style:normal;font-weight:normal;color:#666666">
+                                                                            Fecha de ida</h3>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="border-collapse:collapse">
+                                                                    <td align="left"
+                                                                        style="padding:0;Margin:0;padding-bottom:10px;padding-top:15px">
+                                                                        <p
+                                                                            style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;line-height:27px;color:#999999;font-size:18px">
+                                                                            {{ $travel->start_date }}</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    @endif
                                     @if ($travel->type == '1')
                                         <tr style="border-collapse:collapse">
                                             <td align="left"
@@ -802,38 +812,40 @@
                                             </td>
                                         </tr>
                                     @endif
-                                    <tr style="border-collapse:collapse">
-                                        <td align="left"
-                                            style="Margin:0;padding-top:15px;padding-bottom:30px;padding-left:30px;padding-right:30px">
-                                            <table width="100%" cellspacing="0" cellpadding="0"
-                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                <tr style="border-collapse:collapse">
-                                                    <td valign="top" align="center"
-                                                        style="padding:0;Margin:0;width:540px">
-                                                        <table width="100%" cellspacing="0" cellpadding="0"
-                                                            role="presentation"
-                                                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                                                            <tr style="border-collapse:collapse">
-                                                                <td align="left" style="padding:0;Margin:0">
-                                                                    <h3
-                                                                        style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;font-size:20px;font-style:normal;font-weight:normal;color:#666666">
-                                                                        Rango de precios</h3>
-                                                                </td>
-                                                            </tr>
-                                                            <tr style="border-collapse:collapse">
-                                                                <td align="left"
-                                                                    style="padding:0;Margin:0;padding-bottom:10px;padding-top:15px">
-                                                                    <p
-                                                                        style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;line-height:27px;color:#999999;font-size:18px">
-                                                                        {{ $travel->price }}</p>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
+                                    @if ($travel->price)
+                                        <tr style="border-collapse:collapse">
+                                            <td align="left"
+                                                style="Margin:0;padding-top:15px;padding-bottom:30px;padding-left:30px;padding-right:30px">
+                                                <table width="100%" cellspacing="0" cellpadding="0"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                    <tr style="border-collapse:collapse">
+                                                        <td valign="top" align="center"
+                                                            style="padding:0;Margin:0;width:540px">
+                                                            <table width="100%" cellspacing="0" cellpadding="0"
+                                                                role="presentation"
+                                                                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                                <tr style="border-collapse:collapse">
+                                                                    <td align="left" style="padding:0;Margin:0">
+                                                                        <h3
+                                                                            style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;font-size:20px;font-style:normal;font-weight:normal;color:#666666">
+                                                                            Rango de precios</h3>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr style="border-collapse:collapse">
+                                                                    <td align="left"
+                                                                        style="padding:0;Margin:0;padding-bottom:10px;padding-top:15px">
+                                                                        <p
+                                                                            style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;line-height:27px;color:#999999;font-size:18px">
+                                                                            {{ $travel->price }}</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    @endif
                                     <tr style="border-collapse:collapse">
                                         <td align="left"
                                             style="padding:0;Margin:0;padding-left:30px;padding-right:30px">
