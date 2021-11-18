@@ -38,7 +38,7 @@
     color: var(--secundary) !important;
 }
 .monserrat {
-    font-family: "Montserrat" !important;
+    font-family: "Montserrat", sans-serif;
 }
 .bg-image {
     background-size: cover;

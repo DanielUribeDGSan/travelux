@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     src: url("../fonts/EVERETT-JANA.OTF");
     font-family: primaryBold;
 }
@@ -16,7 +16,7 @@
 @font-face {
     src: url("../fonts/EVERETT-REGULAR.OTF");
     font-family: primaryRegular;
-}
+} */
 
 *,
 *:before,
@@ -59,7 +59,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "primaryBold", sans-serif !important;
+    font-family: "Montserrat", sans-serif;
     color: var(--text-color);
     margin: 0px;
     font-weight: 600;
@@ -70,7 +70,7 @@ button,
 span,
 a,
 input {
-    font-family: "primaryLight", sans-serif !important;
+    font-family: "Montserrat", sans-serif;
     color: var(--text-color);
     margin: 0px;
 }
@@ -108,7 +108,7 @@ h3,
 
 h4,
 .h4 {
-    font-family: "BrandonGrotesqueBlack", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
     @media only screen and (max-width: 767px) {

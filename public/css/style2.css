@@ -280,7 +280,7 @@ textarea.form-control-simple {
     }
 }
 .btn {
-    font-family: "primaryRegular", sans-serif;
+    font-family: "Montserrat", sans-serif;
     position: relative;
     display: inline-block;
     border: 0.2em solid var(--primary);
