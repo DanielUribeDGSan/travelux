@@ -32,14 +32,14 @@
 }
 
 * {
-    font-family: "primaryRegular", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0px;
 }
 
 html,
 body {
     height: auto;
-    font-family: "primaryRegular", sans-serif;
+    font-family: "Montserrat", sans-serif;
     background: var(--blanco);
     font-size: 1rem;
     font-weight: 200;
