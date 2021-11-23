@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Mail\MailCotizacion;
+use App\Models\Airport;
 use App\Models\Travel;
 use Livewire\Component;
 use Illuminate\Support\Facades\Mail;
@@ -143,6 +144,8 @@ class ValidarForm extends Component
 
     public function render()
     {
-        return view('livewire.validar-form');
+        $airports = Airport::get();
+
+        return view('livewire.validar-form', compact('airports'));
     }
 }
