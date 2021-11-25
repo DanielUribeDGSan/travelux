@@ -763,47 +763,7 @@
         </div>
     </form>
 
-    <script>
-        var eropuertos = [];
-        @foreach ($airports as $key => $data)
-            eropuertos.push('{{ $data->name }}');
-        @endforeach
-        console.log(eropuertos);
-        const autoCompleteJS = new autoComplete({
-            selector: "#origen",
-            placeHolder: "Origen",
-            data: {
-                src: eropuertos,
-                cache: true,
-            },
-            resultsList: {
-                element: (list, data) => {
-                    if (!data.results.length) {
-                        // Create "No Results" message element
-                        const message = document.createElement("div");
-                        // Add class to the created element
-                        message.setAttribute("class", "no_result");
-                        // Add message text content
-                        message.innerHTML = `<span>Found No Results for "${data.query}"</span>`;
-                        // Append message element to the results list
-                        list.prepend(message);
-                    }
-                },
-                noResults: true,
-            },
-            resultItem: {
-                highlight: true
-            },
-            events: {
-                input: {
-                    selection: (event) => {
-                        const selection = event.detail.selection.value;
-                        autoCompleteJS.input.value = selection;
-                    }
-                }
-            }
-        });
-    </script>
+    
     <script>
         const mostrarForm = () => {
             const qtyForms = document.querySelector('#qtyForms');
