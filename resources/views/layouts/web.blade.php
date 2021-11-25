@@ -408,9 +408,7 @@
 
     <script src="{{ asset('js/datepicker.js?ver=1.0.9') }}"></script>
     <script src="{{ asset('js/form.js?ver=1.0.9') }}"></script>
-    <script src="{{ asset('js/origen.js?ver=1.0.9') }}"></script>
-    <script src="{{ asset('js/destino.js?ver=1.0.9') }}"></script>
-
+    
     <script>
         $('.dropdown-menu').on('click', function(e) {
             e.stopPropagation();
