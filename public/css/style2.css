@@ -128,6 +128,18 @@ textarea.form-control-simple {
     color: #acacac;
     transition: 0.5s;
     font-size: 0.9rem;
+    margin-left: 15%;
+}
+
+.input-field-2 i,
+.input-field-2 svg,
+.input-field-2 img {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 0.9rem;
+    margin-left: 15%;
 }
 .input-field input,
 .input-field select {
@@ -142,6 +154,16 @@ textarea.form-control-simple {
     width: 100%;
     height: 100%;
     text-transform: lowercase;
+}
+@media (max-width: 767px) {
+    .input-field-2 i,
+    .input-field-2 svg,
+    .input-field-2 img,
+    .input-field i,
+    .input-field svg,
+    .input-field img {
+        margin-left: 0%;
+    }
 }
 .input-field {
     width: 100%;
@@ -472,4 +494,72 @@ textarea.form-control-simple {
 }
 .slide-number {
     display: none;
+}
+
+/* New changes */
+.brand-panel {
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 39.47vmin;
+    height: 40.7vmin;
+    padding: 4.8vmin 2em 4.8vmin;
+    background-color: transparent;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.vertical-panel {
+    z-index: 3;
+    height: 10000px;
+    background-color: transparent;
+}
+.brand-name {
+    position: absolute;
+    z-index: -1;
+    bottom: -0.4em;
+    right: -0.37em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 8.75em;
+    line-height: 1;
+    opacity: 0;
+}
+.arrow-left {
+    left: 5vmin;
+}
+.header-phone {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 0.81em;
+    letter-spacing: 0.32em;
+    position: absolute;
+    z-index: 3;
+    color: #fff;
+    left: 39vmin;
+    top: 5.4vmin;
+}
+
+.section {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 7.1em;
+}
+@media (min-width: 768px) {
+    .arrow-right {
+        left: 12vmin;
+        right: auto;
+        margin-left: 5em;
+        top: 43.5vmin;
+        bottom: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .vertical-panel-content {
+        z-index: 4;
+        display: none;
+    }
 }

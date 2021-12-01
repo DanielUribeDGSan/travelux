@@ -79,7 +79,7 @@
                             data-mask_in="x:50px;y:0px;s:inherit;e:inherit;"
                             data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500"
                             data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-                            data-elementdelay="0.05">¡Tu viaje con Travelux será la vacación de tus sueños!
+                            data-elementdelay="0.05">Sigue tus sueños, crea nuevos recuerdos y viaja con Travelux
 
                             <a href="#cotizador" class="btn js-target-scroll btn-slider ocultar-pc">Cotizar <i
                                     class="icon-next"></i></a>
@@ -124,7 +124,7 @@
                             data-mask_in="x:50px;y:0px;s:inherit;e:inherit;"
                             data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500"
                             data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-                            data-elementdelay="0.05">¡Tu viaje con Travelux será la vacación de tus sueños!
+                            data-elementdelay="0.05">Planea un viaje inolvidable con nosotros en hoteles de ensueño.
 
                             <a href="#cotizador" class="btn js-target-scroll btn-slider ocultar-pc">Cotizar <i
                                     class="icon-next"></i></a>
@@ -169,7 +169,7 @@
                             data-mask_in="x:50px;y:0px;s:inherit;e:inherit;"
                             data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500"
                             data-splitin="chars" data-splitout="none" data-responsive_offset="on"
-                            data-elementdelay="0.05">¡Tu viaje con Travelux será la vacación de tus sueños!
+                            data-elementdelay="0.05">Prepara tu equipaje y Travelux se encarga de tu viaje.
 
                             <a href="#cotizador" class="btn js-target-scroll btn-slider ocultar-pc">Cotizar <i
                                     class="icon-next"></i></a>
@@ -307,7 +307,7 @@
                 <div class="col-lg-6 d-flex align-items-center justify-content-center mt-lg-0 mt-md-4 mt-4">
                     <div class="plr-10p">
                         <p class="texto-lg-3r text-center-md">
-                            Lujo y confort a un <span class="text-secundary">buen precio</span>
+                            Lujo y confort a un <span class="text-secundary">mejor precio</span>
                         </p>
                     </div>
                 </div>

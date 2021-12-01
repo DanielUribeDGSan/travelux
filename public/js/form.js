@@ -146,12 +146,10 @@ const registrarForm = (e) => {
     const claseM = document.querySelector('#claseM').value;
     const origen = document.querySelector('#origen').value;
     const destino = document.querySelector('#destino').value;
-    const hotel = document.querySelector('#hotel').value;
     const clase = document.querySelector('#clase').value;
     const fecha_inicio = document.querySelector('#fecha_inicio').value;
     const fecha_regreso = document.querySelector('#fecha_regreso').value;
-    const hotelM = document.querySelector('#hotelM').value;
-    const price = document.querySelector('#price').value;
+
 
     var boy_edad_1 = "";
     var boy_edad_2 = "";
@@ -289,11 +287,11 @@ const registrarForm = (e) => {
         });
         return false;
     }
-    else if (screen.width >= 1000 && origen == '' && destino == '' && hotel == '') {
+    else if (screen.width >= 1000 && origen == '' && destino == '') {
         Swal.fire({
             icon: 'error',
             title: 'Ups...',
-            html: 'Debes ingresar un destino o un hotel, para poder cotizar',
+            html: 'Debes ingresar un destino, para poder cotizar',
             confirmButtonText: 'Aceptar',
         });
         return false;
@@ -345,7 +343,7 @@ const registrarForm = (e) => {
         });
         return false;
     }
-    else if (screen.width < 1000 && hotelM == '' && origen == '' && destino == '') {
+    else if (screen.width < 1000 && origen == '' && destino == '') {
         Swal.fire({
             icon: 'error',
             title: 'Ups...',
@@ -354,24 +352,7 @@ const registrarForm = (e) => {
         });
         return false;
     }
-    else if (screen.width >= 1000 && price == '' && hotel != '') {
-        Swal.fire({
-            icon: 'error',
-            title: 'Ups...',
-            html: 'El campo "<b>Rangos de precios</b>" no puede quedar vacío',
-            confirmButtonText: 'Aceptar',
-        });
-        return false;
-    }
-    else if (screen.width < 1000 && price == '' && hotelM != '') {
-        Swal.fire({
-            icon: 'error',
-            title: 'Ups...',
-            html: 'El campo "<b>Rangos de precios</b>" no puede quedar vacío',
-            confirmButtonText: 'Aceptar',
-        });
-        return false;
-    }
+
 
     Livewire.emitTo('validar-form', 'registrarFormulario', `${fecha_inicio}`, `${fecha_regreso}`, `${boy_edad_1}`, `${boy_edad_2}`, `${boy_edad_3}`, `${boy_edad_4}`, `${boy_edad_5}`, `${boy_edad_6}`, `${boy_edad_7}`, `${boy_edad_8}`, `${qtyadultos}`, `${qtyninos}`, `${origen}`, `${destino}`);
 

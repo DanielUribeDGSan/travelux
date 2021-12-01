@@ -22,11 +22,8 @@ class ValidarForm extends Component
         'clase' => '0',
         'origen' => null,
         'destino' => null,
-        'hotel' => null,
         'fecha_inicio' => null,
         'fecha_regreso' => null,
-        'price' => null,
-
     ];
 
 
@@ -40,10 +37,9 @@ class ValidarForm extends Component
         'createForm.clase' => 'Clase',
         'createForm.origen' => 'Origen',
         'createForm.destino' => 'Destino',
-        'createForm.hotel' => 'Hotel',
         'createForm.fecha_inicio' => 'Fecha de salida',
         'createForm.fecha_regreso' => 'Fecha de regreso',
-        'createForm.price' => 'Precio',
+
     ];
 
     public function registrarFormulario($fechaInicio, $fechaRegreso, $edadBoy1, $edadBoy2, $edadBoy3, $edadBoy4, $edadBoy5, $edadBoy6, $edadBoy7, $edadBoy8, $adultos, $ninos, $origen, $destino)
@@ -109,11 +105,9 @@ class ValidarForm extends Component
                 'type' => $this->createForm['ida_y_vuelta'],
                 'origin' => $this->createForm['origen'],
                 'destination' => $this->createForm['destino'],
-                'hotel' => $this->createForm['hotel'],
                 'class' => $this->createForm['clase'],
                 'start_date' => $this->createForm['fecha_inicio'],
                 'return_date' => $this->createForm['fecha_regreso'],
-                'price' => $this->createForm['price'],
             ]);
             $years = json_decode($this->years_boys);
             Mail::to($this->createForm['email'])->send(new MailCotizacion($travel, $years));
@@ -130,10 +124,8 @@ class ValidarForm extends Component
                 'type' => $this->createForm['ida_y_vuelta'],
                 'origin' => $this->createForm['origen'],
                 'destination' => $this->createForm['destino'],
-                'hotel' => $this->createForm['hotel'],
                 'class' => $this->createForm['clase'],
                 'start_date' => $this->createForm['fecha_inicio'],
-                'price' => $this->createForm['price'],
             ]);
             $years = json_decode($this->years_boys);
             Mail::to($this->createForm['email'])->send(new MailCotizacion($travel, $years));
