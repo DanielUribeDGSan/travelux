@@ -547,6 +547,32 @@ textarea.form-control-simple {
     margin-top: auto;
     margin-bottom: 7.1em;
 }
+
+.navbar-desctop-menu > li {
+    float: left;
+    margin-left: 4em;
+}
+.navbar-desctop {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1.3em 0 0;
+    box-shadow: 0 0 35px rgb(0 0 0 / 10%);
+}
+.navbar-desctop-menu > li > a {
+    color: var(--primary) !important;
+    background-color: transparent;
+    margin-bottom: 1.5em;
+    font-weight: 500;
+    text-transform: initial;
+}
+.navbar-desctop-menu > li > .btn-secundary {
+    color: var(--blanco) !important;
+}
+.brand-panel {
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    top: -10px;
+}
 @media (min-width: 768px) {
     .arrow-right {
         left: 12vmin;

@@ -34,11 +34,11 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.6/dist/css/autoComplete.min.css">
 
-    <link href="{{ asset('css/style.css?ver=1.0.10') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/colors.css?ver=1.0.10') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/style2.css?ver=1.0.10') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/utilidades.css?ver=1.0.10') }}" rel="stylesheet" media="screen">
-    <link href="{{ asset('css/base.css?ver=1.0.10') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/style.css?ver=1.0.11') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/colors.css?ver=1.0.11') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/style2.css?ver=1.0.11') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/utilidades.css?ver=1.0.11') }}" rel="stylesheet" media="screen">
+    <link href="{{ asset('css/base.css?ver=1.0.11') }}" rel="stylesheet" media="screen">
 
     <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.6/dist/autoComplete.min.js"></script>
 
@@ -134,9 +134,7 @@
                 <sup><span class="delimiter">/</span> 0<span class="total-count"></span></sup>
             </div>
         </div>
-        <div class="header-phone">
-            <a class="text-white mb-2" href="tel:5627457110">56-27-45-71-10</a>
-        </div>
+
         <div class="vertical-panel"></div>
         <div class="vertical-panel-content">
             <div class="vertical-panel-info">
@@ -156,13 +154,17 @@
         <!-- Navigation Desctop -->
 
         <nav class="navbar-desctop visible-md visible-lg">
-            <div class="container">
+            <div class="container-fluid">
                 <a href="#top" class="brand js-target-scroll">
                     <img class="img-fluid" src="{{ asset('img/logo/logo.svg') }}" alt="travelux" />
 
                 </a>
                 <ul class="navbar-desctop-menu">
+                    <li>
+                        <a class="text-white mb-2" href="tel:5627457110">56-27-45-71-10</a>
+                    </li>
                     <li class="active">
+
                         <a class="js-target-scroll" href="#inicio">Inicio</a>
                         {{-- <ul>
                             <li class="active"><a class="js-target-scroll" href="index.html">Home - Light</a></li>
@@ -273,7 +275,7 @@
                                 <a>
                                     <p class="text-primary text-left">
                                         <a href="tel:5627457110" class="author-link">
-                                            <svg width="30" height="30" viewBox="0 0 40 40" fill="none"
+                                            <svg width="25" height="25" viewBox="0 0 40 40" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M17.5901 10.3999L11.9517 3.89155C11.3017 3.14155 10.1101 3.14489 9.35506 3.90155L4.7184 8.54655C3.3384 9.92822 2.94339 11.9799 3.74173 13.6249C8.51109 23.4998 16.4751 31.475 26.3434 36.2582C27.9867 37.0566 30.0367 36.6616 31.4167 35.2799L36.0967 30.5916C36.8551 29.8332 36.8567 28.6349 36.1001 27.9849L29.5667 22.3766C28.8834 21.7899 27.8217 21.8666 27.1367 22.5532L24.8634 24.8299C24.747 24.9519 24.5938 25.0323 24.4273 25.0588C24.2608 25.0853 24.0902 25.0564 23.9417 24.9766C20.2258 22.8367 17.1434 19.7503 15.0084 16.0316C14.9284 15.8828 14.8995 15.7119 14.926 15.5451C14.9525 15.3784 15.033 15.2249 15.1551 15.1082L17.4217 12.8399C18.1084 12.1499 18.1834 11.0832 17.5901 10.3982V10.3999Z"
@@ -283,7 +285,7 @@
                                         </a>
                                         <a href="https://wa.me/5627457110?text=Me%20interesa%20un%20viaje%20a:%20"
                                             target="_blank" class="author-link">
-                                            <svg width="30" height="30" viewBox="0 0 47 47" fill="none"
+                                            <svg width="25" height="25" viewBox="0 0 47 47" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                                     d="M36.0392 11.0313C34.4106 9.392 32.4728 8.09212 30.3382 7.20701C28.2036 6.32191 25.9146 5.86918 23.6038 5.87506C13.914 5.87506 6.02579 13.7613 6.02188 23.455C6.02188 26.5531 6.83067 29.5768 8.36796 32.244L5.875 41.3522L15.1947 38.9063C17.7726 40.3096 20.6608 41.0454 23.596 41.0467H23.6038C33.2917 41.0467 41.1798 33.1605 41.1838 23.4668C41.1904 21.1569 40.7392 18.8686 39.8562 16.7341C38.9731 14.5997 37.6758 12.6614 36.0392 11.0313ZM23.6038 38.0798H23.5979C20.9806 38.0801 18.4115 37.3759 16.1602 36.0412L15.6275 35.724L10.0972 37.1751L11.5718 31.7838L11.2252 31.2316C9.76188 28.902 8.98725 26.206 8.99071 23.455C8.99463 15.3984 15.5492 8.84389 23.6097 8.84389C25.5293 8.83962 27.4308 9.21613 29.2039 9.95162C30.9771 10.6871 32.5868 11.767 33.9399 13.1287C35.3002 14.484 36.3784 16.0954 37.1122 17.8698C37.8459 19.6443 38.2207 21.5466 38.2149 23.4668C38.211 31.5233 31.6565 38.0798 23.6038 38.0798ZM31.6193 27.1347C31.1786 26.9134 29.0205 25.852 28.6171 25.7051C28.2157 25.5583 27.9239 25.4858 27.6301 25.9245C27.3364 26.3631 26.4943 27.3521 26.2377 27.6458C25.9812 27.9396 25.7247 27.9748 25.286 27.7555C24.8473 27.5362 23.4315 27.0721 21.7532 25.5759C20.447 24.4107 19.5657 22.9733 19.3092 22.5326C19.0526 22.092 19.2817 21.8551 19.503 21.6357C19.7008 21.4399 19.9417 21.1226 20.161 20.8661C20.3804 20.6096 20.4528 20.4274 20.5997 20.1337C20.7466 19.8399 20.6741 19.5834 20.5625 19.3641C20.4528 19.1428 19.5735 16.9808 19.2073 16.1015C18.8529 15.2496 18.4906 15.3632 18.2203 15.3514C17.9404 15.34 17.6603 15.3348 17.3802 15.3358C17.1575 15.3414 16.9383 15.3931 16.7364 15.4874C16.5346 15.5818 16.3544 15.7168 16.2072 15.8841C15.8038 16.3247 14.6699 17.3861 14.6699 19.5481C14.6699 21.7101 16.2444 23.7997 16.4637 24.0934C16.683 24.3872 19.5618 28.8228 23.968 30.7263C25.0177 31.1787 25.8363 31.4489 26.4727 31.6526C27.5244 31.9875 28.482 31.9385 29.2399 31.8269C30.0839 31.7016 31.8386 30.7655 32.2048 29.7393C32.571 28.7131 32.571 27.8338 32.4613 27.6498C32.3517 27.4657 32.056 27.3541 31.6193 27.1347Z"
@@ -299,7 +301,7 @@
 
                                 <a href="mailto:contacto@travelux.com.mx" class="author-link">
                                     <p class="text-primary text-left">
-                                        <svg width="30" height="30" viewBox="0 0 41 41" fill="none"
+                                        <svg width="25" height="25" viewBox="0 0 41 41" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M34.1665 34.1668H6.83317C5.92701 34.1668 5.05797 33.8069 4.41722 33.1661C3.77647 32.5254 3.4165 31.6563 3.4165 30.7502V10.1015C3.45483 9.22139 3.83164 8.39006 4.46829 7.78111C5.10493 7.17216 5.95219 6.83266 6.83317 6.8335H34.1665C35.0727 6.8335 35.9417 7.19347 36.5825 7.83422C37.2232 8.47497 37.5832 9.34401 37.5832 10.2502V30.7502C37.5832 31.6563 37.2232 32.5254 36.5825 33.1661C35.9417 33.8069 35.0727 34.1668 34.1665 34.1668ZM6.83317 13.4413V30.7502H34.1665V13.4413L20.4998 22.5502L6.83317 13.4413ZM8.19984 10.2502L20.4998 18.4502L32.7998 10.2502H8.19984Z"
@@ -406,8 +408,8 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
 
-    <script src="{{ asset('js/datepicker.js?ver=1.0.10') }}"></script>
-    <script src="{{ asset('js/form.js?ver=1.0.10') }}"></script>
+    <script src="{{ asset('js/datepicker.js?ver=1.0.11') }}"></script>
+    <script src="{{ asset('js/form.js?ver=1.0.11') }}"></script>
 
     <script>
         $('.dropdown-menu').on('click', function(e) {

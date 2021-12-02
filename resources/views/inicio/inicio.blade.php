@@ -307,7 +307,7 @@
                 <div class="col-lg-6 d-flex align-items-center justify-content-center mt-lg-0 mt-md-4 mt-4">
                     <div class="plr-10p">
                         <p class="texto-lg-3r text-center-md">
-                            Lujo y confort a un <span class="text-secundary">mejor precio</span>
+                            Lujo y confort al <span class="text-secundary">mejor precio</span>
                         </p>
                     </div>
                 </div>
