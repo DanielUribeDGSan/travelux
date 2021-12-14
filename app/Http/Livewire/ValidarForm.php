@@ -27,6 +27,26 @@ class ValidarForm extends Component
     ];
 
 
+    public $createForm2 = [
+        'ida_y_vuelta' => '1',
+        'clase' => '0',
+        'origen' => null,
+        'destino' => null,
+        'fecha_inicio' => null,
+        'fecha_regreso' => null,
+    ];
+
+
+    public $createForm3 = [
+        'ida_y_vuelta' => '1',
+        'clase' => '0',
+        'origen' => null,
+        'destino' => null,
+        'fecha_inicio' => null,
+        'fecha_regreso' => null,
+    ];
+
+
     protected $validationAttributes = [
         'createForm.name' => 'Nombre',
         'createForm.phone' => 'Teléfono',
@@ -42,9 +62,8 @@ class ValidarForm extends Component
 
     ];
 
-    public function registrarFormulario($fechaInicio, $fechaRegreso, $edadBoy1, $edadBoy2, $edadBoy3, $edadBoy4, $edadBoy5, $edadBoy6, $edadBoy7, $edadBoy8, $adultos, $ninos, $origen, $destino)
+    public function registrarFormulario($fechaInicio, $fechaRegreso, $edadBoy1, $edadBoy2, $edadBoy3, $edadBoy4, $edadBoy5, $edadBoy6, $edadBoy7, $edadBoy8, $adultos, $ninos, $fechaInicio2, $fechaRegreso2, $fechaInicio3, $fechaRegreso3)
     {
-
         $boys = $ninos;
         $adults = $adultos;
         $this->createForm['qtyadultos'] = $adults;
@@ -54,6 +73,12 @@ class ValidarForm extends Component
         $fechaR = $fechaRegreso;
         $this->createForm['fecha_inicio'] = $fechaI;
         $this->createForm['fecha_regreso'] = $fechaR;
+
+        $this->createForm2['fecha_inicio'] = $fechaInicio2;
+        $this->createForm2['fecha_regreso'] = $fechaRegreso2;
+
+        $this->createForm3['fecha_inicio'] = $fechaInicio3;
+        $this->createForm3['fecha_regreso'] = $fechaRegreso3;
 
         $edadB1 = $edadBoy1;
         $edadB2 = $edadBoy2;
@@ -72,9 +97,6 @@ class ValidarForm extends Component
         $this->createForm['ninos_6'] = $edadB6;
         $this->createForm['ninos_7'] = $edadB7;
         $this->createForm['ninos_8'] = $edadB8;
-
-        $this->createForm['origen'] = $origen;
-        $this->createForm['destino'] = $destino;
 
         if ($this->createForm['qtyninos'] == '1') {
             $this->years_boys = '{"edad_1":{"edad":' . $this->createForm["ninos_1"] . '}}';
@@ -111,8 +133,6 @@ class ValidarForm extends Component
             ]);
             $years = json_decode($this->years_boys);
             Mail::to($this->createForm['email'])->send(new MailCotizacion($travel, $years));
-
-            return redirect()->route('web.registroCompletado');
         } else if ($this->createForm['ida_y_vuelta'] == '2') {
             $travel = Travel::create([
                 'name' => $this->createForm['name'],
@@ -129,9 +149,85 @@ class ValidarForm extends Component
             ]);
             $years = json_decode($this->years_boys);
             Mail::to($this->createForm['email'])->send(new MailCotizacion($travel, $years));
-
-            return redirect()->route('web.registroCompletado');
         }
+
+        // Form2
+
+        if ($this->createForm2['ida_y_vuelta'] == '1') {
+            $travel2 = Travel::create([
+                'name' => $this->createForm['name'],
+                'phone' => $this->createForm['phone'],
+                'email' => $this->createForm['email'],
+                'adults' => $this->createForm['qtyadultos'],
+                'children' => $this->createForm['qtyninos'],
+                'children_ages' => $this->years_boys,
+                'type' => $this->createForm2['ida_y_vuelta'],
+                'origin' => $this->createForm2['origen'],
+                'destination' => $this->createForm2['destino'],
+                'class' => $this->createForm2['clase'],
+                'start_date' => $this->createForm2['fecha_inicio'],
+                'return_date' => $this->createForm2['fecha_regreso'],
+            ]);
+
+            $years2 = json_decode($this->years_boys);
+            Mail::to($this->createForm['email'])->send(new MailCotizacion($travel2, $years2));
+        } else if ($this->createForm2['ida_y_vuelta'] == '2') {
+            $travel2 = Travel::create([
+                'name' => $this->createForm['name'],
+                'phone' => $this->createForm['phone'],
+                'email' => $this->createForm['email'],
+                'adults' => $this->createForm['qtyadultos'],
+                'children' => $this->createForm['qtyninos'],
+                'children_ages' => $this->years_boys,
+                'type' => $this->createForm['ida_y_vuelta'],
+                'origin' => $this->createForm2['origen'],
+                'destination' => $this->createForm2['destino'],
+                'class' => $this->createForm2['clase'],
+                'start_date' => $this->createForm2['fecha_inicio'],
+            ]);
+            $years2 = json_decode($this->years_boys);
+            Mail::to($this->createForm['email'])->send(new MailCotizacion($travel2, $years2));
+        }
+
+        // Form3
+
+        if ($this->createForm3['ida_y_vuelta'] == '1') {
+            $travel3 = Travel::create([
+                'name' => $this->createForm['name'],
+                'phone' => $this->createForm['phone'],
+                'email' => $this->createForm['email'],
+                'adults' => $this->createForm['qtyadultos'],
+                'children' => $this->createForm['qtyninos'],
+                'children_ages' => $this->years_boys,
+                'type' => $this->createForm3['ida_y_vuelta'],
+                'origin' => $this->createForm3['origen'],
+                'destination' => $this->createForm3['destino'],
+                'class' => $this->createForm3['clase'],
+                'start_date' => $this->createForm3['fecha_inicio'],
+                'return_date' => $this->createForm3['fecha_regreso'],
+            ]);
+
+            $years3 = json_decode($this->years_boys);
+            Mail::to($this->createForm['email'])->send(new MailCotizacion($travel3, $years3));
+        } else if ($this->createForm3['ida_y_vuelta'] == '2') {
+            $travel3 = Travel::create([
+                'name' => $this->createForm['name'],
+                'phone' => $this->createForm['phone'],
+                'email' => $this->createForm['email'],
+                'adults' => $this->createForm['qtyadultos'],
+                'children' => $this->createForm['qtyninos'],
+                'children_ages' => $this->years_boys,
+                'type' => $this->createForm['ida_y_vuelta'],
+                'origin' => $this->createForm3['origen'],
+                'destination' => $this->createForm3['destino'],
+                'class' => $this->createForm3['clase'],
+                'start_date' => $this->createForm3['fecha_inicio'],
+            ]);
+            $years3 = json_decode($this->years_boys);
+            Mail::to($this->createForm['email'])->send(new MailCotizacion($travel3, $years3));
+        }
+
+        return redirect()->route('web.registroCompletado');
     }
 
     public function render()

@@ -113,6 +113,34 @@ const tipoViaje = () => {
     }
 }
 
+const tipoViaje2 = () => {
+    const select = document.querySelector('#ida_y_vuelta2').value;
+    const fechaInicio = document.querySelector('.input-fecha-inicio2');
+    const fechaFin = document.querySelector('.input-fecha-fin2');
+
+    if (select == 1) {
+        fechaFin.classList.remove('disabled-input');
+
+    } else if (select == 2) {
+        fechaFin.classList.add('disabled-input');
+        document.querySelector('#fecha_regreso2').value = "";
+    }
+}
+
+const tipoViaje3 = () => {
+    const select = document.querySelector('#ida_y_vuelta3').value;
+    const fechaInicio = document.querySelector('.input-fecha-inicio3');
+    const fechaFin = document.querySelector('.input-fecha-fin3');
+
+    if (select == 1) {
+        fechaFin.classList.remove('disabled-input');
+
+    } else if (select == 2) {
+        fechaFin.classList.add('disabled-input');
+        document.querySelector('#fecha_regreso3').value = "";
+    }
+}
+
 // Validar formualrio
 const onlyLetrasNum = (input) => {
     var regex = /[$%&|<>#.]/;
@@ -149,6 +177,26 @@ const registrarForm = (e) => {
     const clase = document.querySelector('#clase').value;
     const fecha_inicio = document.querySelector('#fecha_inicio').value;
     const fecha_regreso = document.querySelector('#fecha_regreso').value;
+
+    // Form 2
+    const ida_y_vuelta2 = document.querySelector('#ida_y_vuelta2').value;
+    const claseM2 = document.querySelector('#claseM2').value;
+    const origen2 = document.querySelector('#origen2').value;
+    const destino2 = document.querySelector('#destino2').value;
+    const clase2 = document.querySelector('#clase2').value;
+    const fecha_inicio2 = document.querySelector('#fecha_inicio2').value;
+    const fecha_regreso2 = document.querySelector('#fecha_regreso2').value;
+
+    // Form 3
+    const ida_y_vuelta3 = document.querySelector('#ida_y_vuelta3').value;
+    const claseM3 = document.querySelector('#claseM3').value;
+    const origen3 = document.querySelector('#origen3').value;
+    const destino3 = document.querySelector('#destino3').value;
+    const clase3 = document.querySelector('#clase3').value;
+    const fecha_inicio3 = document.querySelector('#fecha_inicio3').value;
+    const fecha_regreso3 = document.querySelector('#fecha_regreso3').value;
+
+    const qtyForms = document.querySelector('#qtyForms').value;
 
 
     var boy_edad_1 = "";
@@ -305,7 +353,6 @@ const registrarForm = (e) => {
         });
         return false;
     }
-
     else if (origen != '' && destino == '') {
         Swal.fire({
             icon: 'error',
@@ -354,6 +401,175 @@ const registrarForm = (e) => {
     }
 
 
-    Livewire.emitTo('validar-form', 'registrarFormulario', `${fecha_inicio}`, `${fecha_regreso}`, `${boy_edad_1}`, `${boy_edad_2}`, `${boy_edad_3}`, `${boy_edad_4}`, `${boy_edad_5}`, `${boy_edad_6}`, `${boy_edad_7}`, `${boy_edad_8}`, `${qtyadultos}`, `${qtyninos}`, `${origen}`, `${destino}`);
+    // Validar segundo form
+
+    else if (ida_y_vuelta2 == '' && qtyForms == 2 || ida_y_vuelta2 < 1 && qtyForms == 2 || ida_y_vuelta2 == '0' && qtyForms == 2) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Tipo de viaje</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+    else if (screen.width < 1000 && claseM2 == '0' && origen2 != '' && destino2 != '' && qtyForms == 2) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Clase</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+    else if (screen.width >= 1000 && origen2 == '' && destino2 == '' && qtyForms == 2) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'Debes ingresar un destino, para poder cotizar',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+    else if (origen2 == '' && destino2 != '' && qtyForms == 2) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Origen</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+    else if (origen2 != '' && destino2 == '' && qtyForms == 2) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Destino</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+
+    else if (screen.width >= 1000 && clase2 == '0' && origen2 != '' && destino2 != '' && qtyForms == 2) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Clase</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+    else if (fecha_inicio2 == '' && origen2 != '' && destino2 != '' && qtyForms == 2) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Fecha de ida</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+    else if (fecha_regreso2 == '' && ida_y_vuelta2 == '1' && origen2 != '' && destino2 != '' && qtyForms == 2) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Fecha de regreso</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+    else if (screen.width < 1000 && origen2 == '' && destino2 == '' && qtyForms == 2) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'Debes ingresar un destino o un hotel, para poder cotizar',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+
+    // Validar tercer form
+
+    else if (ida_y_vuelta3 == '' && qtyForms == 3 || ida_y_vuelta3 < 1 && qtyForms == 3 || ida_y_vuelta3 == '0' && qtyForms == 3) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Tipo de viaje</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+    else if (screen.width < 1000 && claseM3 == '0' && origen3 != '' && destino3 != '' && qtyForms == 3) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Clase</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+    else if (screen.width >= 1000 && origen3 == '' && destino3 == '' && qtyForms == 3) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'Debes ingresar un destino, para poder cotizar',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+    else if (origen3 == '' && destino3 != '' && qtyForms == 3) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Origen</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+    else if (origen3 != '' && destino3 == '' && qtyForms == 3) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Destino</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+    else if (screen.width >= 1000 && clase3 == '0' && origen3 != '' && destino3 != '' && qtyForms == 3) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Clase</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+    else if (fecha_inicio3 == '' && origen3 != '' && destino3 != '' && qtyForms == 3) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Fecha de ida</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+    else if (fecha_regreso3 == '' && ida_y_vuelta3 == '1' && origen3 != '' && destino3 != '' && qtyForms == 3) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'El campo "<b>Fecha de regreso</b>" no puede quedar vacío',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+    else if (screen.width < 1000 && origen3 == '' && destino3 == '' && qtyForms == 3) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Ups...',
+            html: 'Debes ingresar un destino o un hotel, para poder cotizar',
+            confirmButtonText: 'Aceptar',
+        });
+        return false;
+    }
+
+    Livewire.emitTo('validar-form', 'registrarFormulario', `${fecha_inicio}`, `${fecha_regreso}`, `${boy_edad_1}`, `${boy_edad_2}`, `${boy_edad_3}`, `${boy_edad_4}`, `${boy_edad_5}`, `${boy_edad_6}`, `${boy_edad_7}`, `${boy_edad_8}`, `${qtyadultos}`, `${qtyninos}`, `${fecha_inicio2}`, `${fecha_regreso2}`, `${fecha_inicio3}`, `${fecha_regreso3}`,);
 
 }

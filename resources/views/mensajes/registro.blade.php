@@ -26,7 +26,7 @@
                 <div class="container w-100">
                     <div class="h-auto">
                         <a class="d-inline-block ml-5p mt-3" href="{{ route('web.inicio') }}">
-                            <svg width="70" height="53" viewBox="0 0 106 53" fill="none"
+                            <svg width="30" height="30" viewBox="0 0 106 53" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M106 26.5L2.99999 26.5M2.99999 26.5L32.2089 51M2.99999 26.5L32.209 2"
                                     stroke="#E84343" stroke-width="3" />
@@ -43,9 +43,9 @@
                             y le saques el mejor provecho posible.
                         </p>
                         <div class="row ml-5p d-flex align-items-center justify-content-center mt-5">
-                            <div class="col-lg-4 col-md-12 mt-lg-0 mt-md-2 mt-2">
-                                <a href="tel:5627457110">
-                                    <p class="text-white">
+                            <div class="col-lg-6 col-md-12 mt-lg-0 mt-md-2 mt-2">
+                                <p class="text-white">
+                                    <a href="tel:5627457110">
                                         <svg width="30" height="30" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -53,15 +53,10 @@
                                                 stroke="white" stroke-width="2" stroke-linecap="round"
                                                 stroke-linejoin="round" />
                                         </svg>
+                                    </a>
+                                    <a href="https://wa.me/5627457110?text=Me%20interesa%20un%20viaje%20a:%20"
+                                        target="_blank">
 
-                                        56-27-45-71-10
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-12 mt-lg-0 mt-md-2 mt-2">
-                                <a href="https://wa.me/5627457110?text=Me%20interesa%20un%20viaje%20a:%20"
-                                    target="_blank">
-                                    <p class="text-white">
                                         <svg width="30" height="30" viewBox="0 0 47 47" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -69,11 +64,12 @@
                                                 fill="white" />
                                         </svg>
 
-                                        56-27-45-71-10
-                                    </p>
-                                </a>
+                                    </a>
+                                    56-27-45-71-10
+                                </p>
                             </div>
-                            <div class="col-lg-4 col-md-12 mt-lg-0 mt-md-2 mt-2">
+
+                            <div class="col-lg-6 col-md-12 mt-lg-0 mt-md-2 mt-2">
                                 <a href="mailto:contacto@travelux.com.mx">
                                     <p class="text-white">
                                         <svg width="30" height="30" viewBox="0 0 41 41" fill="none"
